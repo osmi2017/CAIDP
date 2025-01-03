@@ -1,0 +1,12 @@
+<li  class="{{ (strpos(Route::currentRouteName(), 'home') === 0) ? 'active' : '' }}"><a href="{{ route('home')}}" > <i class="fa fa-home"></i> Tableau de bord</a></li>
+<li class="{{ (strpos(Route::currentRouteName(), 'institutions.inform.listeDemande') === 0   OR strpos(Route::currentRouteName(), 'institutions.inform.ajoutDemande')===0 ) ? 'active' : '' }}"><a href="{{route('institutions.inform.ajoutDemande')}}/" > <i class="fa fa-file"></i> Ajouter une demande</a></li>
+<li class="{{ (strpos(Route::currentRouteName(), 'Documents.index') === 0 or strpos(Route::currentRouteName(), 'Documents.detail') === 0 OR strpos(Route::currentRouteName(), 'Documents.create') === 0) ? 'active' : '' }}"><a href="{{route('Documents.index')}}/" > <i class="fa fa-print"></i> Documents </a></li>
+
+<li class="{{ (strpos(Route::currentRouteName(), 'MySaisines') === 0 or strpos(Route::currentRouteName(), 'MySaisines.detail') === 0) ? 'active' : '' }}"><a href="{{route('MySaisines')}}/" > <i class="fa fa-file"></i> Saisines </a></li>
+
+<li class="{{ (strpos(Route::currentRouteName(), 'Responsable.index') === 0 or strpos(Route::currentRouteName(), 'Responsable.detail') === 0 OR strpos(Route::currentRouteName(), 'Responsable.nouveau') === 0) ? 'active' : '' }}"><a href="{{route('Responsable.index')}}/" > <i class="fa fa-users"></i> Utilisateurs </a></li>
+{{-- <li class="{{ (strpos(Route::currentRouteName(), 'institutions.inform.listeDemande') === 0   OR strpos(Route::currentRouteName(), 'institutions.inform.ajoutDemande')===0 ) ? 'active' : '' }}"><a href="{{route('institutions.inform.listeDemande')}}/" > <i class="fa fa-file"></i> Demandes</a></li> --}}
+{{-- <li class=""><a href="#" > <i class="fa fa-bell"></i> Notifications</a></li> --}}
+<li class="{{ (strpos(Route::currentRouteName(), 'genererRapport') === 0) ? 'active' : '' }}"><a href="{{ route('genererRapport') }}" > <i class="fa fa-print"></i> Générer rapport</a></li>
+<li class="{{ (strpos(Route::currentRouteName(), 'Responsable.param') === 0 OR strpos(Route::currentRouteName(), 'Responsable.organisme')===0) ? 'active' : '' }}"><a href="{{ route('Responsable.param', Auth::user()->responsable_id) }} " > <i class="fa fa-cogs"></i> Paramètres</a></li>
+{{-- {{ dd(Route::currentRouteName()) }} --}}

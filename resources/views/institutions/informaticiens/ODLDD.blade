@@ -1,0 +1,49 @@
+<table class="table table-hover table-striped table-bordered">
+                         							<tr>
+                         								<th>Etat</th>
+                         								<td class="">@if($Decision && $Decision->etat===0) <span class="span span-default"><a href="#"><i class="fa fa-edit"></i> Brouillon</a></span> @elseif($Decision && $Decision->etat==1 && $Demande->liquide==0) <span class="span span-default"><i class="fa fa-check"></i> Validé, en attente de transmission</span> 
+                         								@elseif($Decision && $Decision->etat==1 && $Demande->liquide==1)
+                         									<span class="span span-default"><i class="fa fa-check"></i> Validé et transmis</span> 
+                         								@endif</td>
+                         							</tr>
+                         							<tr>
+                         								<th>Proposé le</th>
+                         								<td>{{ $Decision && $Decision->propose_par_ri ? $DateRewrite->dateTimeFrancais($Decision->created_at) : "" }}</td>
+                         							</tr>
+                         							<tr>
+                         								<th>Proposé par</th>
+                         								<td>{{ $Decision && $Decision->propose_par_ri ? $Decision->propose_par_ri : "" }}</td>
+                         							</tr>
+                         							<tr>
+                         								<th>Validé le</th>
+                         								<td>
+                         									@if($Decision!==null && $Decision->updated_at!==null)
+                     										{{ $DateRewrite->dateTimeFrancais($Decision->updated_at) }}
+                         									@elseif($Decision!==null && $Decision->updated_at==null))
+                         										{{ $DateRewrite->dateTimeFrancais($Decision->created_at) }}
+                         									@endif
+                         								</td>
+                         							</tr>
+                         							<tr>
+                         								<th>Validé par</th>
+                         								<td>{{ $Decision && $Decision->valide_par_rh ? $Decision->valide_par_rh : "" }}</td>
+                         							</tr>
+                         							<tr>
+                         								<th>Envoyé le</th>
+                         								<td></td>
+                         							</tr>
+                         							<tr>
+                         								<th>Mode de transmission</th>
+                         								<td>
+                         									@if($Demande && $Demande->transmission!=null)
+                         									<ul>			
+                         									@foreach(json_decode($Demande->transmission, true) as $value)
+                         										<li>{{ strtoupper($value) }}</li>
+                         									@endforeach
+                         									</ul>
+                         									@endif
+                         								</td>
+                         							</tr>
+                         							
+                         							
+                         						</table>

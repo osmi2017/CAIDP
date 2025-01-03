@@ -1,0 +1,19 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+# Ignore files larger than 25MB
+*.zip
+*.tar.gz
+caidpweb@192.168.1.2
+.well-known.tar.gz
+# Add more file types here...
+/database/factories
+/storage

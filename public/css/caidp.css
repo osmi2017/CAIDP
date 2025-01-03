@@ -1,0 +1,116 @@
+body, #app{
+	margin: 0;
+	/*background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("the-image.png");*/
+	background: -webkit-linear-gradient(top, rgba(212, 84, 34, .9), rgba(212, 84, 34, .9)), url("/bg-caidp.jpg") no-repeat !important ;
+	/*background:  url(/caidp.png) no-repeat rgba(212, 84, 34, .9) ;*/
+	/*overflow: hidden;*/
+	font-family: Nunito;
+	font-size: 18px;
+	color: #bbb;
+	height: 100%;
+}
+.swal2-content{
+	font-size: 22px !important;
+}
+.swal2-popup{
+	width: 460px !important;
+	margin: auto;
+}
+.swal2-styled {
+    margin: .3125em;
+    padding: 12px 31px;
+    box-shadow: none;
+    font-size: 22px !important;
+    font-weight: 500;
+}
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: #3085d6;
+    color: #fff;
+    font-size: 19px;
+}
+
+
+label{
+	font-size: 12px;
+}
+.row_height{
+	height: 100vh;
+
+}
+.page_left{
+	/*box-shadow: 0px 1px 20px #222;*/
+	/*position: absolute;*/
+	/*background: url(/caidp.png) no-repeat center;*/
+	left: 0;
+	bottom: 0;
+	top: 0;
+}
+.page_right{
+	min-height: 100Vh;
+	background: #fff;
+	/*position: absolute;*/
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
+.mainContent{
+	/*overflow: scroll;*/
+	padding: 20px;
+}
+.page_left h2{
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 0 #222;
+	position: relative;
+	top: 10em;
+	background: rgba(255, 93, 43, .7);
+	font-weight: bold;
+	padding: 20px;
+}
+
+.mainContent .formDiv{
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    bottom: 20px;
+}
+.step{
+	margin-bottom: 30px;
+	border-bottom: solid 1px #eee;
+}
+.form-control{
+	border: solid 2px #eee;
+	border-radius: 3px;
+	height: 45px;
+	font-size: 15px;
+	border-top: none;
+}
+#propulsedBy{
+	bottom: 0;
+	position: absolute;
+	float: right !important;
+	text-align: center;
+	right: 0;
+}
+
+#propulsedBy a{
+	right: 0;
+	color: #999;
+	font-size: 12px;
+}
+.fieldJs{
+	margin: 10px 0 0px 0;
+}
+.disabled{
+	cursor: not-allowed;
+}
+@media(min-width:768px) and (max-width:992px) {
+	.mainContent .formDiv{
+		padding: 0 !important;
+	}
+    
+}

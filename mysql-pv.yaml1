@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mysql-pv
+spec:
+  capacity:
+    storage: 1Gi  # Set the desired storage capacity
+  accessModes:
+    - ReadWriteOnce  # This allows the volume to be mounted as read-write by a single node
+  hostPath:
+    path: "/opt/mysql-data"  # Set the path on the host machine where the data will be stored

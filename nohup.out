@@ -1,0 +1,1811 @@
+Starting MailCatcher
+==> smtp://127.0.0.1:1025
+==> http://127.0.0.1:1080
+*** MailCatcher runs as a daemon by default. Go to the web interface to quit.
+Fontconfig warning: "/etc/fonts/fonts.conf", line 146: blank doesn't take any effect anymore. please remove it from your fonts.conf
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+[3297:3321:0906/082803.962154:ERROR:in_progress_cache_impl.cc(93)] Could not read download entries from file because there was a read failure.
+[3297:3297:0906/082809.307150:ERROR:background_mode_manager_aura.cc(13)] Not implemented reached in virtual void BackgroundModeManager::EnableLaunchOnStartup(bool)
+[3297:3297:0906/082809.793973:ERROR:gpu_process_transport_factory.cc(1019)] Lost UI shared context.
+[3297:3333:0906/082838.803337:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/082839.459584:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/082840.281758:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3297:0906/082844.723193:ERROR:CONSOLE(102)] "Uncaught Error: Attempting to use a disconnected port object", source: extensions::messaging (102)
+[3297:3333:0906/082859.276615:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/082859.754248:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/082859.806168:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/082901.804316:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/082901.861224:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/082903.089903:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/082903.183168:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3303:0906/082903.272905:ERROR:sandbox_ipc_linux.cc(447)] sendmsg: Relais brisé (pipe) (32)
+[3297:3303:0906/082903.273035:ERROR:sandbox_ipc_linux.cc(447)] sendmsg: Relais brisé (pipe) (32)
+[3297:3303:0906/082903.273072:ERROR:sandbox_ipc_linux.cc(447)] sendmsg: Relais brisé (pipe) (32)
+[3297:3303:0906/082903.273107:ERROR:sandbox_ipc_linux.cc(447)] sendmsg: Relais brisé (pipe) (32)
+[3297:3333:0906/082904.114052:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/082904.568273:ERROR:service_manager_context.cc(252)] Attempting to run unsupported native service: /usr/lib/chromium-browser/content_renderer.service
+[3297:3333:0906/083003.167421:ERROR:service_manager_context.cc(252)] Attempting to run unsupported native service: /usr/lib/chromium-browser/content_renderer.service
+[3297:3297:0906/083330.143358:ERROR:media_internals.cc(102)] Cannot get RenderProcessHost
+[3297:3333:0906/083809.828092:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/083809.844340:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/083809.902856:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+couldn't lock 16384 bytes of memory (secret_session): Ne peut allouer de la mémoire
+[3297:3333:0906/083953.288129:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/083953.379309:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/083953.696262:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/084046.446658:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/084047.327223:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/084047.711204:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+Running Firefox as root in a regular user's session is not supported.  ($HOME is /home/foxy which is owned by foxy.)
+[3297:3333:0906/090128.982606:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/092302.315447:ERROR:connection_factory_impl.cc(379)] Failed to connect to MCS endpoint with error -106
+[3297:3333:0906/092306.638402:ERROR:connection_factory_impl.cc(379)] Failed to connect to MCS endpoint with error -137
+[3297:3333:0906/101022.086589:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/101023.325215:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/101023.598961:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/102123.492920:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/103028.009568:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/103028.146865:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/103028.492120:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/103159.489153:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/103159.587518:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/103159.950592:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3297:0906/104705.309444:ERROR:navigation_entry_screenshot_manager.cc(135)] Invalid entry with unique id: 220
+[3297:3297:0906/104833.110313:ERROR:browser_main_loop.cc(333)] GLib-GObject: g_value_set_object: assertion 'G_VALUE_HOLDS_OBJECT (value)' failed
+[3297:3297:0906/105352.378298:ERROR:browser_main_loop.cc(333)] GLib-GObject: g_value_set_object: assertion 'G_VALUE_HOLDS_OBJECT (value)' failed
+[3297:3297:0906/114321.093224:ERROR:navigation_entry_screenshot_manager.cc(135)] Invalid entry with unique id: 299
+[3297:3333:0906/120703.744248:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/120704.229473:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/120704.255220:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/131952.001426:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/132013.138696:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/132117.370566:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/132408.042950:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/132418.307690:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/134347.077726:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/134432.447372:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/134625.686176:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/135049.437667:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/135049.466985:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/135049.608434:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3297:0906/135051.846946:ERROR:media_internals.cc(102)] Cannot get RenderProcessHost
+[3297:3297:0906/135051.847239:ERROR:media_internals.cc(102)] Cannot get RenderProcessHost
+[3297:3297:0906/135051.847458:ERROR:media_internals.cc(102)] Cannot get RenderProcessHost
+[3297:3333:0906/135439.217399:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/135439.225162:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/135451.239473:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/135451.249701:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/135451.258665:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/135559.339024:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/135559.345180:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/135633.306294:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/140131.975913:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/140134.471039:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/140137.507514:ERROR:upload_data_presenter.cc(73)] Not implemented reached in virtual void extensions::RawDataPresenter::FeedNext(const net::UploadElementReader &)
+[3297:3333:0906/163033.670928:ERROR:connection_factory_impl.cc(379)] Failed to connect to MCS endpoint with error -21
+[3297:3747:0906/163033.841067:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+[3297:3747:0906/163035.673821:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+[3297:3333:0906/163055.284213:ERROR:connection_factory_impl.cc(379)] Failed to connect to MCS endpoint with error -137
+[3297:3747:0906/163055.286557:ERROR:get_updates_processor.cc(244)] PostClientToServerMessage() failed during GetUpdates
+[3297:3333:0906/163136.298770:ERROR:connection_factory_impl.cc(379)] Failed to connect to MCS endpoint with error -106
+[3297:3333:0906/164358.870326:ERROR:ssl_client_socket_impl.cc(1147)] handshake failed; returned -1, SSL error code 1, net_error -100
+[3297:3333:0906/165536.704617:ERROR:ssl_client_socket_impl.cc(1147)] handshake failed; returned -1, SSL error code 1, net_error -100
+[3297:3333:0906/170115.189881:ERROR:ssl_client_socket_impl.cc(1147)] handshake failed; returned -1, SSL error code 1, net_error -100
+[3297:3333:0906/170150.368918:ERROR:ssl_client_socket_impl.cc(1147)] handshake failed; returned -1, SSL error code 1, net_error -100
+[3297:3333:0906/170150.369072:ERROR:connection_factory_impl.cc(379)] Failed to connect to MCS endpoint with error -100
+[3297:3333:0906/170453.224701:ERROR:ssl_client_socket_impl.cc(1147)] handshake failed; returned -1, SSL error code 1, net_error -100
+[3297:3333:0906/170611.783187:ERROR:ssl_client_socket_impl.cc(1147)] handshake failed; returned -1, SSL error code 1, net_error -100
+[3297:3333:0906/170620.067234:ERROR:ssl_client_socket_impl.cc(1147)] handshake failed; returned -1, SSL error code 1, net_error -100
+[3297:3297:0906/170804.805516:ERROR:navigation_entry_screenshot_manager.cc(135)] Invalid entry with unique id: 449
+[3297:3297:0906/171224.512055:ERROR:chrome_browser_main_extra_parts_x11.cc(62)] X IO error received (X server probably went away)
+[3297:3395:0906/171226.729513:FATAL:bus.cc(1151)] D-Bus connection was disconnected. Aborting.
+[3297:3334:0906/171226.729536:FATAL:bus.cc(1151)] D-Bus connection was disconnected. Aborting.
+[3341:3341:0906/171229.031327:ERROR:x11_util.cc(90)] X IO error received (X server probably went away)
+VLC is not supposed to be run as root. Sorry.
+If you need to use real-time priorities and/or privileged TCP ports
+you can use vlc-wrapper (make sure it is Set-UID root and
+cannot be run by non-trusted users first).
+VLC is not supposed to be run as root. Sorry.
+If you need to use real-time priorities and/or privileged TCP ports
+you can use vlc-wrapper (make sure it is Set-UID root and
+cannot be run by non-trusted users first).
+[6379:6379:0925/151525.362424:ERROR:sandbox_linux.cc(369)] InitializeSandbox() called with multiple threads in process gpu-process.
+[6379:6379:0925/151534.271475:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[6379:6379:0925/151543.000089:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+[6379:6379:0925/151601.115079:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 2 times!
+[6379:6379:0925/151602.974984:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 3 times!
+[6379:6379:0925/151602.979271:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 4 times!
+[6341:6364:0925/151608.194278:ERROR:shader_disk_cache.cc(258)] Failed to create shader cache entry: -2
+[6379:6379:0925/151611.392385:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 5 times!
+[6379:6379:0925/151611.394035:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 6 times!
+[6379:6379:0925/151613.579206:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 7 times!
+[6379:6379:0925/151616.605177:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 8 times!
+[6379:6379:0925/151654.918960:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 9 times!
+[6379:6379:0925/151654.925626:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 10 times!
+[6379:6379:0925/151709.244571:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 11 times!
+[6379:6379:0925/151712.305761:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 12 times!
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[6379:6379:0925/151718.193527:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 13 times!
+[6379:6379:0925/151718.195079:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 14 times!
+[6379:6379:0925/151725.387613:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 15 times!
+[6379:6379:0925/151725.391565:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 16 times!
+[6379:6379:0925/151731.778992:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 17 times!
+[6379:6379:0925/151734.300132:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 18 times!
+[6379:6379:0925/151736.688249:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 19 times!
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[6379:6379:0925/162418.464420:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 256 times!
+[6379:6379:0925/163742.460011:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 512 times!
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[6379:6379:0925/170358.600536:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 768 times!
+[647:674:0925/170906.676779:ERROR:data_channel.cc(44)] Accepting maxRetransmits = -1 for backwards compatibility
+[647:674:0925/170906.677042:ERROR:data_channel.cc(49)] Accepting maxRetransmitTime = -1 for backwards compatibility
+
+(chromium:6341): GVFS-RemoteVolumeMonitor-WARNING **: 17:16:41.346: Owner of volume monitor org.gtk.vfs.UDisks2VolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+
+(chromium:6341): GVFS-RemoteVolumeMonitor-WARNING **: 17:16:41.346: Owner of volume monitor org.gtk.vfs.AfcVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+
+(chromium:6341): GVFS-RemoteVolumeMonitor-WARNING **: 17:16:41.346: Owner of volume monitor org.gtk.vfs.GoaVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+
+(chromium:6341): GVFS-RemoteVolumeMonitor-WARNING **: 17:16:41.347: Owner of volume monitor org.gtk.vfs.MTPVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+
+(chromium:6341): GVFS-RemoteVolumeMonitor-WARNING **: 17:16:41.347: Owner of volume monitor org.gtk.vfs.GPhoto2VolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[000055be33f6a570] main libvlc: Lancement de vlc avec l'interface par défaut. Utiliser « cvlc » pour démarrer VLC sans interface.
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[00007fddf0002c20] main input error: ES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 300 ms)
+[00007fddf0002c20] main input error: ES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 2193 ms)
+[00007fddf0002c20] main input error: ES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 2193 ms)
+[00007fddf0002c20] main input error: ES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 2208 ms)
+libdvdnav: Using dvdnav version 6.0.0
+[0000559eceeb2570] main libvlc: Lancement de vlc avec l'interface par défaut. Utiliser « cvlc » pour démarrer VLC sans interface.
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[00007f5c240292c0] main input error: ES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 300 ms)
+[00007f5c240292c0] main input error: ES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 300 ms)
+[00007f5bf0c35700] main decoder error: Timestamp conversion failed (delay 300000, buffering 63680, bound 3000000)
+[00007f5bf0c35700] main decoder error: Could not convert timestamp 47674061433 for mpg123
+[00007f5c240245e0] main input error: ES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 300 ms)
+[00007f5c240245e0] main input error: ES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 1648 ms)
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[00007f5c240275a0] main input error: ES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 300 ms)
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[00007f5c24003720] main input error: ES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 300 ms)
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[00007f5c24007ac0] main input error: ES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 300 ms)
+[00007f5c24007ac0] main input error: ES_OUT_SET_(GROUP_)PCR  is called too late (jitter of 5744 ms ignored)
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879381571 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879407693 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879433815 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879459938 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879486060 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879512183 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879538305 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879564428 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879590550 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879616673 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879642795 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879668917 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879695040 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879721162 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879747285 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879773407 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879799530 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879825652 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879851775 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879877897 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879904019 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879930142 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879956264 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63879982387 for mpg123
+[00007f5c300129d0] main decoder error: Timestamp conversion failed (delay 300000, buffering 48984, bound 3000000)
+[00007f5c300129d0] main decoder error: Could not convert timestamp 63880008509 for mpg123
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[00007f5c24007ac0] main input error: ES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 300 ms)
+ICE default IO error handler doing an exit(), pid = 16351, errno = 32
+filezilla: Fatal IO error 0 (Succès) on X server :0.0.
+QObject::~QObject: Timers cannot be stopped from another thread
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[000056072fbd2570] main libvlc: Lancement de vlc avec l'interface par défaut. Utiliser « cvlc » pour démarrer VLC sans interface.
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+libdvdnav: Using dvdnav version 6.0.0
+libdvdread: Encrypted DVD support unavailable.
+************************************************
+**                                            **
+**  No css library available. See             **
+**  /usr/share/doc/libdvdread4/README.css     **
+**  for more information.                     **
+**                                            **
+************************************************
+libdvdread: Couldn't find device name.
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdread:DVDOpenFilePath:findDVDFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO

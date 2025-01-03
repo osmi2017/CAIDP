@@ -1,0 +1,151 @@
+.wizardCaidp ul.wizard li{
+	display: inline-block;
+}
+.wizardCaidp ul.wizard li a{
+	font-size: 14px;
+	color: #656d78;
+	text-decoration: none;
+	display: block;
+	line-height: 18px;
+	padding: 10px 20px 15px 0px;
+	position: relative;
+}
+
+.wizardCaidp ul.wizard li a.active{
+	background: orange;
+}
+
+.wizardCaidp ul.wizard{
+	border-bottom: solid 1px #eee;
+	/*width: 100%;*/
+}
+
+.swal2-content{
+	font-size: 22px !important;
+}
+.swal2-popup{
+	width: 460px !important;
+	margin: auto;
+}
+.swal2-styled {
+    margin: .3125em;
+    padding: 12px 31px;
+    box-shadow: none;
+    font-size: 22px !important;
+    font-weight: 500;
+}
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: #3085d6;
+    color: #fff;
+    font-size: 19px;
+}
+.swal2-actions button{
+	font-size: 14px;
+}
+.overlay{
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background:rgba(0,0,0,.9);
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  display: none;
+  overflow: auto;
+
+}
+.contentFoxBox{
+  width: 40%;
+  margin: auto;
+  background: white;
+  border-radius: 2px;
+  position: relative;
+  top: 450px;
+  bottom: 50px;
+  /*height: 80%;*/
+  z-index: 99999;
+  padding: 30px;
+  padding-bottom: 130px;
+  overflow : auto;
+  /*height: auto;*/
+  /*padding-bottom: 50px;*/
+}
+.shrinkToFit{
+  cursor: pointer !important;
+}
+.contentFoxBox .header{
+  text-align: center;
+  border-bottom: solid 1px #eee;
+  text-transform: uppercase;
+  padding-bottom: 10px; 
+  font-size: 18px;
+  font-weight: bold;
+}
+.contentFoxBox .body{
+  font-size: 16px;
+  text-align: center;
+}
+.contentFoxBox .body #foxyBoxResponse{
+  display: none;
+  position: relative;
+  width: auto;
+}
+.contentFoxBox .footer{
+  padding-top: 20px;
+  position: relative;
+
+}
+#CloseFoxContent{
+  position: fixed;
+  right: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: white;
+
+}
+#BoxHidden{
+  position: absolute;
+  top: 0;
+  margin-top: 5px;
+  z-index: 9996;
+  right: 0;
+}
+.overlay{
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  background:rgba(0,0,0,.9);
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  display: none;
+  overflow: auto;
+}
+
+.overlayContent{
+  width: 80%;
+  margin: auto;
+  background: white;
+  border-radius: 2px;
+  position: relative;
+  top: 50px;
+  bottom: 50px;
+  z-index: 99999;
+  padding: 30px;
+  padding-bottom: 130px;
+  overflow : auto;
+  cursor: default;
+  height: 100%;
+}
+#closeOverLay i{
+  float: right;
+  padding: 5px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.text-white{
+  color: white !important;
+}
