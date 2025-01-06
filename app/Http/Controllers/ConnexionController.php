@@ -128,7 +128,7 @@ class ConnexionController extends Controller
 
     public function deconnexion(){
     	Auth::logout();
-    	return redirect()->route('Accueil');
+    	return redirect()->route('login');
     }
 
     public function loginForm(){

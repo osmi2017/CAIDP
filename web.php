@@ -115,6 +115,7 @@ Route::post('/organisme-save/','InscriptionController@saveInscription')->name('s
 
 // ============================================= FRONT ROUTE ==================================================
 Route::get('/', 'AccueilController@index')->name('Accueil');
+
 Route::get('ajax-search', 'AccueilController@ajaxInfo')->name('ajaxInfo');
 Route::get('liste-responsables', 'AccueilController@listRespo')->name('listRespo');
 Route::get('organisme-search', 'AccueilController@findOrganisme')->name('findOrganisme');

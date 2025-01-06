@@ -48,7 +48,7 @@
     @endif
 		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 			<h3 class="text-center " style="color: #fff; font-weight: bold; border: solid 1px #999; padding: 15px; border-radius: 5px;box-shadow: 2px 2px 0 2px #777">
-					Gestion des demandes d'accès à l'information et documents d'intérêt public2
+					Gestion des demandes d'accès à l'information et documents d'intérêt public
 				</h3>
 			<div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
 	    		
