@@ -1156,6 +1156,22 @@ $("input[name=type_mandant]").click(function(){
 	}
 });
 
+// Ajouter un nouveau groupe de champs
+$("#add-file").on("click", function() {
+	
+	const newFileGroup = `
+		<div class="file-group">
+			<input type="file" class="file-input" multiple>
+			<input type="text" class="file-name" placeholder="Nom du document">
+			<button type="button" class="remove-file">Supprimer</button>
+		</div>
+	`;
+	$("#file-container").append(newFileGroup);
+});
 
+// Supprimer un groupe de champs
+$(document).on("click", ".remove-file", function() {
+	$(this).closest(".file-group").remove();
+});
 
 });

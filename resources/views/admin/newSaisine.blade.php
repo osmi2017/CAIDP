@@ -22,6 +22,47 @@
         font-weight: bold;
         border-top: solid 1px #ddd;
     }
+    .file-group {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .file-input {
+            flex: 2;
+        }
+
+        .file-name {
+            flex: 3;
+        }
+
+        .remove-file {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .remove-file:hover {
+            background-color: #d32f2f;
+        }
+
+        #add-file {
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #add-file:hover {
+            background-color: #45a049;
+        }
 </style>
 <div class="modal fade bd-example-modal-xl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
@@ -774,6 +815,24 @@
                                     <span class="invalid-feedback"></span>
                                 </div>
                             </div>
+                            <div class="row clearfix">
+	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+	                                <label for="dateSaisine">Accusée de reception/ autres documents </label>
+	                            </div>
+	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                                <div id="file-container">
+	                                <div class="form-group">
+	                                    <div class="">
+	                                    	<input type="file" class="form-control " name="documents[]" multiple>
+	                                    	<input type="text" class="file-name" placeholder="Nom du document">
+	                                   	</div>
+                                           
+	                                </div>
+                                </div>
+                                <button type="button" id="add-file">Ajouter un autre fichier</button>
+	                                <span class="invalid-feedback"></span>
+	                            </div>
+	                        </div>
                             <div class="row clearfix" style="display:none">
                                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
                                     <label for="emailrespo">Direction</label>
@@ -904,20 +963,7 @@
 	                                <span class="invalid-feedback"></span>
 	                            </div>
 	                        </div>
-	                        <div class="row clearfix">
-	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-	                                <label for="dateSaisine">Accusée de reception/ autres documents </label>
-	                            </div>
-	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
-	                                <div class="form-group">
-	                                    <div class="">
-	                                    	<input type="file" class="form-control " name="documents[]" multiple="">
-	                                    	
-	                                   	</div>
-	                                </div>
-	                                <span class="invalid-feedback"></span>
-	                            </div>
-	                        </div>
+	                        
 	                        <hr>
 	                        <div class="row clearfix">
 	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
