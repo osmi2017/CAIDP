@@ -92,15 +92,15 @@
                         		<span class="number">4</span> <br>Saisine
                         	</a>
                         </li>
-                        <li  class="disabled {{ $CheckSaisineEdit->addDone($Saisine) }} " >
+                       <!-- <li  class="disabled {{ $CheckSaisineEdit->addDone($Saisine) }} " >
                         	<a id="wizard_horizontal-t-4" href="#" data-content="wizard_horizontal-p-4">
                         		<span class="number">5</span> <br>Facilitation
                         	</a>
-                        </li>
+                        </li>-->
                         
                         <li  class="disabled {{ $Saisine && count($Saisine->contentieu)!=0 ? "done" : "" }}" >
                         	<a id="wizard_horizontal-t-5" href="#" data-content="wizard_horizontal-p-5">
-                        		<span class="number">6</span> <br>Contentieux
+                        		<span class="number">5</span> <br>instruction
                         	</a>
                         </li>
                         
@@ -115,7 +115,7 @@
                 <div class="content clearfix">
                     <section id="wizard_horizontal-p-0"  class="body current" >
                         <form enctype="multipart/form-data" class="form-horizontal {{ !$Saisine ? "" : "hide" }}" >
-                        	<legend>Identification du requérant1</legend>
+                        	<legend>Identification du requérant</legend>
                         	<div class="row clearfix">
                                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
                                     <label for="email">Email</label>
@@ -174,11 +174,11 @@
                                 </div>
                             </div>
                             <div id="nomPrenomBox" style="margin-bottom: 13px">
-                                <div class="row clearfix">
+                                <div class="row clearfix" style="display:none">
                                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
                                         <label for="civilite"></label>
                                     </div>
-                                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7" style="display:none">
                                         <div class="form-group">
                                             <div class="">
                                                 <input name="civilite" type="radio" id="M" value="M"  />
@@ -552,10 +552,10 @@
                                 </div>
                             </div>
                             <div class="row clearfix">
-                                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                    <label for="logo">Logo <span>*</span> </label>
+                                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label" style="display:none">
+                                    <label for="logo">Logo1 <span>*</span> </label>
                                 </div>
-                                <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                                <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7" style="display:none">
                                     <div class="form-group">
                                         <div class="form-ine">
                                            	<input type="file" name="logo" class="" id="logo">
@@ -679,7 +679,7 @@
 			                <hr>
 			                @if($Saisine)
 			                <table class="table table-striped">
-			                	<caption><h4>Information organisme1</h4></caption>
+			                	<caption><h4>Information organisme</h4></caption>
 			                	<tr>
 			                		<th>Organisme</th>
 			                		<td>{{ $Saisine->demande->organisme->organisme }}</td>
@@ -699,7 +699,7 @@
 			                </table>
 			                <br>
 			                <table class="table table-striped">
-			                	<caption><h4>Utilisateurs enregistré</h4></caption>
+			                	<caption><h4>Responsable de l'information</h4></caption>
 			                	<thead>
 			                		<tr>
 			                			<th>Nom & prénom</th>
@@ -714,12 +714,7 @@
 			                			<td>{{ $value->nom." ".$value->prenom }}</td>
 			                			<td>
 			                				{{ $value->qualiteresponsable->qualite }}
-			                				@if($value->ri==1)
-			                					<label class="label label-warning">Responsable de l'informatique</label>
-			                				@endif
-			                				@if($value->rh==1)
-			                					<label class="label label-warning">Responsable Hiérachique</label>
-			                				@endif
+			                				
 			                			</td>
 			                			<td>{{ $value->contact }}</td>
 			                			<td>{{ $value->email }}</td>
@@ -739,7 +734,7 @@
                         	<legend>Enregistrement de la demande qui fait objet de la saisine</legend>
                         	<div class="row clearfix">
                                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                    <label for="emailrespo">Libellé <span>*</span></label>
+                                    <label for="emailrespo">objet de la demande <span>*</span></label>
                                 </div>
                                 <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                     <div class="form-group">
@@ -752,7 +747,7 @@
                                     <span class="invalid-feedback"></span>
                                 </div>
                             </div>
-                            <div class="row clearfix">
+                            <div class="row clearfix" style="display:none">
                                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
                                     <label for="emailrespo">Description</label>
                                 </div>
@@ -779,7 +774,7 @@
                                     <span class="invalid-feedback"></span>
                                 </div>
                             </div>
-                            <div class="row clearfix">
+                            <div class="row clearfix" style="display:none">
                                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
                                     <label for="emailrespo">Direction</label>
                                 </div>
@@ -792,7 +787,7 @@
                                     <span class="invalid-feedback"></span>
                                 </div>
                             </div>
-                            <div class="row clearfix">
+                            <div class="row clearfix" style="display:none">
                                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
                                     <label for="emailrespo">Service </label>
                                 </div>
@@ -834,7 +829,7 @@
 			                		<td>{{ $Saisine->demande->libelle }}</td>
 			                	</tr>
 			                	<tr>
-			                		<th>Description</th>
+			                		<th>Objet de la demande</th>
 			                		<td>{!! $Saisine->demande->description !!}</td>
 			                	</tr>
 			                	<tr>
@@ -857,8 +852,8 @@
 	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
 	                                <div class="form-group">
 	                                    <div class="">
-	                                    	<input type="radio" name="auteurSaisine" value="1" id="usager" checked=""> <label for="usager">Usager</label> 
-	                                    	<input type="radio" name="auteurSaisine" value="2" id="organisme" > <label for="organisme">Organisme</label> 
+	                                    	<input type="radio" name="auteurSaisine" value="1" id="usager" checked=""> <label for="usager">Personne physique</label> 
+	                                    	<input type="radio" name="auteurSaisine" value="2" id="organisme" > <label for="organisme">Personne morale</label> 
 	                                    	<input type="radio" name="auteurSaisine" value="3" id="organisme" > <label for="organisme">Autosaisine</label> 
 	                                   	</div>
 	                                </div>
@@ -867,7 +862,7 @@
 	                        </div>
 	                        <div class="row clearfix">
 	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-	                                <label for="motif">Motif de la saisine <span>*</span> </label>
+	                                <label for="motif">Objet de la saisine <span>*</span> </label>
 	                            </div>
 	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
 	                                <div class="form-group">
@@ -964,13 +959,10 @@
 			                @if($Saisine)
 			                <table class="table table-striped">
 			                	<tr>
-			                		<th>Motif de la saisine</th>
+			                		<th>Objet de la saisine</th>
 			                		<td>{{ $Saisine->motif }}</td>
 			                	</tr>
-			                	<tr>
-			                		<th>Description </th>
-			                		<td>{!! $Saisine->description !!}</td>
-			                	</tr>
+			                	
 			                	<tr>
 			                		<th>Date de saisine</th>
 			                		<td>{{ $Saisine->dateSaisine }}</td>
@@ -1006,7 +998,7 @@
 			            </div>
 
                     </section>
-                    <section id="wizard_horizontal-p-4"  class="body hide">
+                    <!--<section id="wizard_horizontal-p-4"  class="body hide">
                         <form enctype="multipart/form-data" class="form-horizontal" >
                         	<legend>Enregistrement d'une action</legend>
                         	<div id="facilitationList">
@@ -1089,11 +1081,11 @@
                             		@endif
                             	</a>
 			                    {{-- <a href="#"   style="margin-left: 10px" class="btn btn-warning pull-right btn-lg next waves-effect @if($Saisine && is_null($Saisine->facilitation)) @endif " id="passeFacilitation" >Passer cette étape</a> --}}
-			                    <a href="#" class="btn btn-success pull-right btn-lg send  waves-effect suiteForm" @if($Saisine) style="display: none;" @endif id="sendFacilitation"><span><i class="fa fa-save"></i></span> Enregistrer</a>
+			                    <a href="#" class="btn btn-success pull-right btn-lg send  waves-effect suiteForm" @if($Saisine) style="display: none;" @endif id="sendContentieu"><span><i class="fa fa-save"></i></span> Enregistrer</a>
 			                </div>
 	                        
                         </form>
-                    </section>
+                    </section>-->
                     <section id="wizard_horizontal-p-5"  class="body hide">
                         <form enctype="multipart/form-data" class="form-horizontal" >
                         	<legend>Enregistrement d'une action</legend>
@@ -1301,11 +1293,11 @@
 
 {{-- ==================== --}}
 <div id="nomPrenomBoxData" class="hide">
-    <div class="row clearfix">
+    <div class="row clearfix" style="display:none">
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
             <label for="civilite"></label>
         </div>
-        <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+        <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7" style="display:none">
             <div class="form-group">
                 <div class="">
                     <input name="civilite" type="radio" id="M" value="M"  />
@@ -1348,11 +1340,11 @@
 
 {{-- ==================== --}}
 <div id="representantName" class="hide">
-    <div class="row clearfix">
+    <div class="row clearfix" style="display:none"  >
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
             <label for="civilite"></label>
         </div>
-        <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+        <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7" style="display:none">
             <div class="form-group">
                 <div class="">
                     <input name="civilite" type="radio" id="M" value="M"  />

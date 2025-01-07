@@ -115,6 +115,8 @@ $(document).ready(function(){
 		$.get('../../find-email', d, function(data){
 			if(typeof data == 'string'){
 				var m = JSON.parse(data);
+			
+				var rad= "#typeDem" + m.type;
 				$("#wizard_horizontal-p-0").find("#contact").empty().val(m.contact);
 				$("#wizard_horizontal-p-0").find("#nom").empty().val(m.nom);
 				$("#wizard_horizontal-p-0").find("#prenom").empty().val(m.prenom);
@@ -125,6 +127,7 @@ $(document).ready(function(){
 				$("#wizard_horizontal-p-1").find("#reqIdQual").empty().val(m.id);
 				$("#wizard_horizontal-p-0").find("#emailChecker").empty().val(m.email);
 				$("#wizard_horizontal-p-0").find("#contactChecker").empty().val(m.contact);
+				$("#wizard_horizontal-p-0").find(rad).prop("checked", true);
 				$("#reqId").val(m.id);
 				var f = $("#wizard_horizontal-p-0");
 
