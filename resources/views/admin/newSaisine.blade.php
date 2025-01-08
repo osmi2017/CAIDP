@@ -475,12 +475,8 @@
                         	@if($Saisine)
                         	<table class="table table-striped">
                                 <caption>Information du requérant</caption>
-                        	@if($Saisine->demande->requerant->civilite)
-                        		<tr>
-                        			<th>Civilité</th>
-                        			<td>{{ $Saisine->demande->requerant->civilite }}</td>
-                        		</tr>
-                        	@endif
+
+                        	
                         		<tr>
                         			<th>Nom et Prénom</th>
                         			<td>{{ $Saisine->demande->requerant->nom." ".$Saisine->demande->requerant->prenom }}</td>
@@ -490,12 +486,24 @@
                         			<td>{{ $Saisine->demande->requerant->qualite->qualite}}</td>
                         		</tr>
                         		<tr>
-                        			<th>Contact</th>
+                        			<th>Contact 1</th>
                         			<td>{{ $Saisine->demande->requerant->contact }}</td>
+                        		</tr>
+                                <tr>
+                        			<th>Type de demandeur</th>
+                        			<td>{{ $Saisine->demande->requerant->type->type }}</td>
+                        		</tr>
+                                <tr>
+                        			<th>Contact 2</th>
+                        			<td>{{ $Saisine->demande->requerant->contact2 }}</td>
                         		</tr>
                         		<tr>
                         			<th>Email</th>
                         			<td>{{ $Saisine->demande->requerant->email }}</td>
+                        		</tr>
+                                <tr>
+                        			<th>Type de secteur d'activité</th>
+                        			<td>{{ $Saisine->demande->requerant->secteur->secteur }}</td>
                         		</tr>
                         		
                         	</table>
@@ -721,6 +729,7 @@
 			                @if($Saisine)
 			                <table class="table table-striped">
 			                	<caption><h4>Information organisme</h4></caption>
+                               
 			                	<tr>
 			                		<th>Organisme</th>
 			                		<td>{{ $Saisine->demande->organisme->organisme }}</td>
@@ -817,7 +826,7 @@
                             </div>
                             <div class="row clearfix">
 	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-	                                <label for="dateSaisine">Accusée de reception/ autres documents </label>
+	                                <label for="dateSaisine">autres documents </label>
 	                            </div>
 	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                 <div id="file-container">
@@ -883,13 +892,14 @@
 			                <hr>
 			                @if($Saisine)
 			                <table class="table table-striped">
+                               
 			                	<tr>
 			                		<th>Document/Information Demandé(e)</th>
 			                		<td>{{ $Saisine->demande->libelle }}</td>
 			                	</tr>
 			                	<tr>
 			                		<th>Objet de la demande</th>
-			                		<td>{!! $Saisine->demande->description !!}</td>
+			                		<td>{!! $Saisine->demande->libelle !!}</td>
 			                	</tr>
 			                	<tr>
 			                		<th>Date de soumission</th>
@@ -959,11 +969,29 @@
 	                                    <div class="form-line">
 	                                    	<input type="text" class="form-control date" name="dateSaisine" value="{{ $Saisine ? explode(" ", $Saisine->dateSaisine)[0] : "" }}" placeholder="" {{ $CheckSaisineEdit->checkReadable($Saisine) }}>
 	                                   	</div>
+                                        
 	                                </div>
 	                                <span class="invalid-feedback"></span>
 	                            </div>
 	                        </div>
-	                        
+                            <div class="row clearfix">
+	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+	                                <label for="dateSaisine">autres documents </label>
+	                            </div>
+	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                                <div id="file-container">
+	                                <div class="form-group">
+	                                    <div class="">
+	                                    	<input type="file" class="form-control " name="documents[]" multiple>
+	                                    	<input type="text" class="file-name" placeholder="Nom du document">
+	                                   	</div>
+                                           
+	                                </div>
+                                </div>
+                                <button type="button" id="add-file">Ajouter un autre fichier</button>
+	                                <span class="invalid-feedback"></span>
+	                            </div>
+	                        </div>
 	                        <hr>
 	                        <div class="row clearfix">
 	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">

@@ -141,7 +141,7 @@ $(document).ready(function(){
 		$("#nomPrenomBox").empty();
 		// $("#qualiiteBox").removeClass("hide");
 		$("#titreBox").attr("required", "required");
-		$("#qualite").val("3");
+		//$("#qualite").val("N/A");
 		$("#qualite").removeAttr("required");
 		// ==================== mandantBox ==========
 		$("#mandantBox").addClass('hide');

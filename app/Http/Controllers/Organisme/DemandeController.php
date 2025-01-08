@@ -131,6 +131,7 @@ class DemandeController extends Controller
                 }
 
                 $Responsable = \App\Responsable::whereOrganismeId($organisme->id)->with('qualiteresponsable')->whereRi(1)->first();
+                //dd($organisme->id);
                 if(!$Responsable){
                     $ResponsableInfo = \App\Responsable::whereOrganismeId($organisme->id)->get();
                 }else{
@@ -437,7 +438,8 @@ class DemandeController extends Controller
             'libelle'=>'required',
             'dateDemande'=>'sometimes|required|date'
         ]);
-
+        
+        //dd($request->allFiles());
         if($validator->fails()){
             return $validator->errors()->all();
         }

@@ -85,6 +85,8 @@ $(document).ready(function(){
 				p.parent().find('span.invalid-feedback').empty().html(' Le champ	 	'+l+' est obligatoire ').addClass('error');
 				p.addClass("has-error");
 				i++;
+				console.log(el)
+				
 			// return false;
 			}
 		});
@@ -169,6 +171,7 @@ $(document).ready(function(){
 	function checkOrganisme(organisme, reqIdQual=null){
 		$.get('../find-orga', { organisme : organisme, reqIdQual : reqIdQual } , function(data){
 			if(typeof data == 'string'){
+				
 				var m = JSON.parse(data);
 				$("#wizard_horizontal-p-1").find("#organisme").empty().val(m.organisme);
 				$("#wizard_horizontal-p-1").find("#organisme_id").empty().val(m.id);
@@ -300,6 +303,7 @@ $(document).ready(function(){
 			x = $(this);
 			var fn = x.parent().parent(),
 				id = x.attr('id');
+				
 			if(checkRequired(fn)==0){
 				if(id=="sendDemandeur"){
 					sendDemandeur(fn);
@@ -434,6 +438,7 @@ $(document).ready(function(){
 
 	function sendDemande(f){
 		var d = new FormData(f[0]);
+		
 		crf();
 		$.ajax({
 	        url: '../enregistrer-demande',
@@ -1134,6 +1139,7 @@ $("#mandant").click(function(){
 function checkMandant(x){
 	if(x.prop('checked')==true){
 			$("#mandantBox").removeClass('hide');
+			$("#denomBox").removeClass('hide');
 		$("#mandantBox").find('input').attr("required", "required");
 		$("#mandantBox").find('input[name=emailMandant]').removeAttr("required");
 		$("#mandantBox").find('input[name=sexeMandataire]').removeAttr("required");
