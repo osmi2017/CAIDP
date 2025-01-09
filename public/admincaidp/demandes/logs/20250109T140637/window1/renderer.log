@@ -1,0 +1,49 @@
+2025-01-09 14:06:38.528 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.vscode-selfhost-test-provider' wants API proposal 'attributableCoverage' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-01-09 14:06:38.538 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-01-09 14:06:38.538 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.debugpy' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-01-09 14:06:39.078 [info] Started local extension host with pid 63763.
+2025-01-09 14:06:39.127 [info] Started initializing default profile extensions in extensions installation folder. file:///root/.vscode/extensions
+2025-01-09 14:06:39.657 [info] Completed initializing default profile extensions in extensions installation folder. file:///root/.vscode/extensions
+2025-01-09 14:06:40.483 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-01-09 14:06:42.952 [info] [perf] Render performance baseline is 31ms
+2025-01-09 14:08:16.349 [warning] [backup tracker] suspended, ignoring register event file:///directory-to-open 
+2025-01-09 14:08:16.372 [warning] [backup tracker] suspended, ignoring dirty change event untitled:/directory-to-open 
+2025-01-09 14:08:16.385 [warning] [backup tracker] suspended, ignoring unregister event untitled:/directory-to-open 
+2025-01-09 14:08:16.725 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.vscode-selfhost-test-provider' wants API proposal 'attributableCoverage' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-01-09 14:08:16.725 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-01-09 14:08:16.725 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.debugpy' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-01-09 14:08:16.915 [info] Started local extension host with pid 63914.
+2025-01-09 14:08:17.579 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-01-09 14:08:19.545 [info] [perf] Render performance baseline is 31ms
+2025-01-09 15:22:14.027 [error] Unable to consume quoted string at char 94349: Error: Unable to consume quoted string at char 94349
+	at r.error (/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:22471)
+	at s (/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:21144)
+	at p (/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:21569)
+	at u (/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:14746)
+	at h (/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:14998)
+	at /usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:15451
+	at v (/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:15535)
+	at E (/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:16481)
+	at I (/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:16891)
+	at t.getRootNode (/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:211771)
+	at t.DefaultCompletionItemProvider.provideCompletionItemsInternal (/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:189574)
+	at t.DefaultCompletionItemProvider.provideCompletionItems (/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:188352)
+	at dI.provideCompletionItems (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:140624)
+	at file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:163861
+	at qt.s (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:155148)
+	at qt.$provideCompletionItems (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:138:163849)
+	at Dy.S (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:115275)
+	at Dy.Q (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:115055)
+	at Dy.M (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:114106)
+	at Dy.L (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:113249)
+	at kh.value (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:112046)
+	at P.B (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:30:746)
+	at P.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:30:964)
+	at Vn.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:9457)
+	at kh.value (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:175:13296)
+	at P.B (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:30:746)
+	at P.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:30:964)
+	at Vn.fire (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:32:9457)
+	at MessagePortMain.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:175:11588)
+	at MessagePortMain.emit (node:events:518:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
