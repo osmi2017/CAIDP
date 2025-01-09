@@ -16,7 +16,7 @@ class Globals
         return "/admin/decisions/";
     }
     public static function Saisine_Path(){
-        return "/admin/saisines/";
+        return "    ";
     }
 
     public static function CAIDP_Decision_Path(){

@@ -133,7 +133,18 @@ class adminController extends Controller
         
         $Qualiteresponsable = Qualiteresponsable::distinct('qualite')->get('qualite');
         //dd($QualiteReq);
-    	return view('admin.newSaisine', compact('Type', 'Saisinepredefinies', 'QualiteOrg', 'QualiteReq', 'Secteurs', 'Typesecteurs', 'Qualiteresponsable', 'Organisme', 'Decisionpredefiniescaidp', 'Param', 'Saisine', 'RespoInfo', 'actionFacilitation', 'actionContentieu', 'Decisioncaipdp','messages'));
+        $demande_doc[] =[];
+        if($Saisine){
+        $demandeId = $Saisine->demande->id;
+        $directory = public_path('admincaidp/demandes');
+        $files = glob($directory . '/' . $demandeId . '*');
+        
+        
+        foreach ($files as $file) {
+            $demande_doc[] = basename($file);
+        }
+    }
+    	return view('admin.newSaisine', compact('Type', 'Saisinepredefinies', 'QualiteOrg', 'QualiteReq', 'Secteurs', 'Typesecteurs', 'Qualiteresponsable', 'Organisme', 'Decisionpredefiniescaidp', 'Param', 'Saisine', 'RespoInfo', 'actionFacilitation', 'actionContentieu', 'Decisioncaipdp','messages','demande_doc'));
     }
 
     public function saveDemandeur(Request $request){
@@ -149,13 +160,15 @@ class adminController extends Controller
             'description' => 'nullable',
             'dateSaisine' => 'required|date',
             'auteurSaisine' => 'required|',
-            'documents.*' => 'sometimes|mimes:pdf,png,jpg,jpeg'
+            
         ]);
 
         if($validator->fails()){
             return $validator->errors()->all();
         }
-
+        $allFiles = $request->allFiles(); // Get all uploaded files
+        $allDocumentNames = $request->input('document_names1');
+        
         $Saisinepredefinie = Saisinepredefinie::where('typeSaisine', $request->motif);
         $motif = $request->motif;
 
@@ -198,7 +211,40 @@ class adminController extends Controller
             $data['saisine_id'] = $saisine_id;
             $data['message'] = "La saisine a été enregistrée avec succès !";
             // dd($data);
+            $saisineID = $saisine_id;
+            if ($allFiles && $allDocumentNames) {
+                
+                foreach ($allFiles as $fieldName => $documents) {
+                    // Ensure that $documents is an array (it could be an array of files or a single file)
+                    if (is_array($documents)) {
+                        foreach ($documents as $index => $file) {
+                            $originalName = $file->getClientOriginalName(); // Original file name
+                            $originalExtension = $file->getClientOriginalExtension();
+                            $customName = $allDocumentNames[$index] ?? $originalName; // Custom name or original name
+                            $finalName = $saisineID .'_'.$customName.'.'.$originalExtension ;
+                            //dd($allDocumentNames );
+                            // Store the file with the custom name
+                            //dd($originalName);
+                            if ($file->isValid()) {
+                                // Proceed with storing the file
+                                $filePath = $file->storeAs('admincaidp/doc_saisines', $finalName, 'public');
+                            }
+                        }
+                    } else {
+                        // Handle case where a single file is uploaded, not an array of files
+                        $originalName = $documents->getClientOriginalName(); 
+                        $originalExtension = $documents->getClientOriginalExtension();
+                        $customName = $allDocumentNames[0] ?? $originalName; 
+                        $finalName = $saisineID .'_'.$customName;
+                        //dd($finalName);
+                        // Store the file with the custom name
+                        $filePath = $documents->storeAs('admincaidp/doc_saisines', $finalName,'public');
+                    }
+                }
+            }
             return json_encode($data);
+
+
         }
     }
 

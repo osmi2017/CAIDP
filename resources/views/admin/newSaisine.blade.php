@@ -60,8 +60,45 @@
             border-radius: 5px;
         }
 
-        #add-file:hover {
+        #add-file1:hover {
             background-color: #45a049;
+        }
+        #add-file1 {
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #add-file1:hover {
+            background-color: #45a049;
+        }
+        .remove-file1:hover {
+            background-color: #d32f2f;
+        }
+        .remove-file1 {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .file-input1 {
+            flex: 2;
+        }
+
+        .file-name1 {
+            flex: 3;
+        }
+        .file-group1 {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 </style>
 <div class="modal fade bd-example-modal-xl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
@@ -833,7 +870,7 @@
 	                                <div class="form-group">
 	                                    <div class="">
 	                                    	<input type="file" class="form-control " name="documents[]" multiple>
-	                                    	<input type="text" class="file-name" placeholder="Nom du document">
+	                                    	<input type="text" class="file-name" placeholder="Nom du document" name="document_names[]">
 	                                   	</div>
                                            
 	                                </div>
@@ -904,6 +941,23 @@
 			                	<tr>
 			                		<th>Date de soumission</th>
 			                		<td>{{ $Saisine->demande->dateDemande }}</td>
+			                	</tr>
+                                <tr>
+			                		<th>Documents</th>
+                                
+			                		<td>
+                                    @foreach($demande_doc as $file)
+                                        @if(is_array($file))
+                                            <!-- Handle the case where $file is an array -->
+                                            @foreach($file as $subFile)
+                                                <a href="{{ asset('admincaidp/demandes/' . $subFile) }}" target="_blank">{{$subFile}}</a><br>
+                                            @endforeach
+                                        @else
+                                            <a href="{{ asset('admincaidp/demandes/' . $file) }}" target="_blank">{{$file}}</a><br>
+                                        @endif
+                                    @endforeach
+                                    </td>
+                                    
 			                	</tr>
 
 			                </table>
@@ -979,7 +1033,7 @@
 	                                <label for="dateSaisine">autres documents </label>
 	                            </div>
 	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
-                                <div id="file-container">
+                                <div id="file-container1">
 	                                <div class="form-group">
 	                                    <div class="">
 	                                    	<input type="file" class="form-control " name="documents[]" multiple>
@@ -988,7 +1042,7 @@
                                            
 	                                </div>
                                 </div>
-                                <button type="button" id="add-file">Ajouter un autre fichier</button>
+                                <button type="button" id="add-file1">Ajouter un autre fichier1</button>
 	                                <span class="invalid-feedback"></span>
 	                            </div>
 	                        </div>

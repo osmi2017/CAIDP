@@ -363,43 +363,43 @@ $(document).ready(function(){
 		f.find("a.send span").empty().html("<i class='fa fa-save '></i>");
 		f.find("a.sned").removeAttr("disabled");
 	}
-	function sendDemandeur(f){
-		disableBtn(f);
-		// var d = f.find("input, select, textarea, radio, checkbox").serialize();
-		var d = new FormData(f[0]);
-		crf();
-		$.ajax({
-	        url: '../../enregistrer-requerant',
-	        type: 'POST',
-	        data: d,
-	        processData: false,
-    		contentType: false,
-	        success: function (data) {
-				ableBtn(f);
-				if(typeof data =='string'){
-					var m = JSON.parse(data);
-					if(m.error==true){
-						ErrorNotify(m.message);	
-					}else{
-						$("a#wizard_horizontal-t-0").parent().addClass('done');
-						$("#wizard_horizontal ul#wizardRow li").eq(1).find("a").trigger('click');
-						if($("#reqIdQual").val()==""){
-							$("#reqIdQual").val(m.reqId);
-							$("#requerantId").val(m.reqId);
-							$("#reqId").val(m.reqId);
-						}
-						f.find("a.send").empty().html("<span></span> Mettre à jour");
-						SuccessNotify(m.message);
-					}				
+		function sendDemandeur(f){
+			disableBtn(f);
+			// var d = f.find("input, select, textarea, radio, checkbox").serialize();
+			var d = new FormData(f[0]);
+			crf();
+			$.ajax({
+				url: '../../enregistrer-requerant',
+				type: 'POST',
+				data: d,
+				processData: false,
+				contentType: false,
+				success: function (data) {
+					ableBtn(f);
+					if(typeof data =='string'){
+						var m = JSON.parse(data);
+						if(m.error==true){
+							ErrorNotify(m.message);	
+						}else{
+							$("a#wizard_horizontal-t-0").parent().addClass('done');
+							$("#wizard_horizontal ul#wizardRow li").eq(1).find("a").trigger('click');
+							if($("#reqIdQual").val()==""){
+								$("#reqIdQual").val(m.reqId);
+								$("#requerantId").val(m.reqId);
+								$("#reqId").val(m.reqId);
+							}
+							f.find("a.send").empty().html("<span></span> Mettre à jour");
+							SuccessNotify(m.message);
+						}				
+					}
+					else if(typeof  data == 'object'){
+						$.each(data, function(key, value){
+							ErrorNotify(value);
+						});
+					}
 				}
-				else if(typeof  data == 'object'){
-					$.each(data, function(key, value){
-	      				ErrorNotify(value);
-	      			});
-	      		}
-	      	}
-		});
-	}
+			});
+		}
 
 	function sendOrganisme(f){
 		var d = new FormData(f[0]);
@@ -1167,17 +1167,33 @@ $("#add-file").on("click", function() {
 	
 	const newFileGroup = `
 		<div class="file-group">
-			<input type="file" class="file-input" multiple>
-			<input type="text" class="file-name" placeholder="Nom du document">
+			<input type="file" class="file-input" name="documents[]" multiple>
+			<input type="text" class="file-name" name="document_names[]" placeholder="Nom du document">
 			<button type="button" class="remove-file">Supprimer</button>
 		</div>
 	`;
 	$("#file-container").append(newFileGroup);
 });
 
+
+
 // Supprimer un groupe de champs
 $(document).on("click", ".remove-file", function() {
 	$(this).closest(".file-group").remove();
 });
 
+$("#add-file1").on("click", function() {
+	
+	const newFileGroup = `
+		<div class="file-group1">
+			<input type="file" class="file-input1" name="documents1[]" multiple>
+			<input type="text" class="file-name1" name="document_names1[]" placeholder="Nom du document">
+			<button type="button" class="remove-file1">Supprimer</button>
+		</div>
+	`;
+	$("#file-container1").append(newFileGroup);
+});
+$(document).on("click", ".remove-file1", function() {
+	$(this).closest(".file-group1").remove();
+});
 });

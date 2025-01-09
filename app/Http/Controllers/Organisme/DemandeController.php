@@ -460,6 +460,39 @@ class DemandeController extends Controller
 
         // ========================== SAVE MANDANT ======================================
         // dd(\Session::get('nom'));
+        $allFiles = $request->allFiles(); // Get all uploaded files
+            $allDocumentNames = $request->input('document_names'); // Get all document names
+            //  dd($allFiles );
+            $DemandeController = new MainDemandeController;
+            $lastDemandeID = $DemandeController->lastDemande()->id;
+            $demandeID = $lastDemandeID + 1; // Increment the last ID by 1
+
+            if ($allFiles && $allDocumentNames) {
+                foreach ($allFiles as $fieldName => $documents) {
+                    // Ensure that $documents is an array (it could be an array of files or a single file)
+                    if (is_array($documents)) {
+                        foreach ($documents as $index => $file) {
+                            $originalName = $file->getClientOriginalName(); // Original file name
+                            $originalExtension = $file->getClientOriginalExtension();
+                            $customName = $allDocumentNames[$index] ?? $originalName; // Custom name or original name
+                            $finalName = $demandeID .'_'.$customName.'.'.$originalExtension ;
+                            //dd($allDocumentNames );
+                            // Store the file with the custom name
+                            $filePath = $file->storeAs('admincaidp/demandes', $finalName,'public');
+                        }
+                    } else {
+                        // Handle case where a single file is uploaded, not an array of files
+                        $originalName = $documents->getClientOriginalName(); 
+                        $originalExtension = $documents->getClientOriginalExtension();
+                        $customName = $allDocumentNames[0] ?? $originalName; 
+                        $finalName = $$demandeID .'_'.$customName;
+                        //dd($finalName);
+                        // Store the file with the custom name
+                        $filePath = $documents->storeAs('admincaidp/demandes', $finalName,'public');
+                    }
+                }
+            }
+
                 if(\Session::get('nom')){
                     $Mandant = new Mandant;
                     $Mandant->nom = \Session::get('nom');
@@ -516,7 +549,7 @@ class DemandeController extends Controller
         }
         // dd($_POST);
         $request->organisme_id = $organisme_id;
-        $DemandeController = new MainDemandeController;
+        
         $SoumettreDemande = $DemandeController->SoumettreDemande($object);
         if($SoumettreDemande==true){
             $data['demId'] = $_POST['dem_idHide'] ? $_POST['dem_idHide'] : $DemandeController->lastDemande()->id;

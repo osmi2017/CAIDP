@@ -138,7 +138,7 @@ class SaisineController extends Controller
         else{
             $messages=NULL;   
         }
-        //dd($messages);
+        dd($messages);
         $organisme = Organisme::find($Saisine->demande->organisme_id)->first('organisme');
         return view('organismes.saisines.detail', compact('Saisine', 'organisme','docFacilitations','doccontentieus','messages'));
         // dd($Saisine);
