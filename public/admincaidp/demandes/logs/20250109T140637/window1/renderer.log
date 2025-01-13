@@ -47,3 +47,11 @@
 	at MessagePortMain.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:175:11588)
 	at MessagePortMain.emit (node:events:518:28)
 	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-01-10 06:30:10.961 [info] Extension host (LocalProcess pid: 63914) is unresponsive.
+2025-01-10 06:30:11.857 [info] Extension host (LocalProcess pid: 63914) is responsive.
+2025-01-10 06:30:14.937 [info] Extension host (LocalProcess pid: 63914) is unresponsive.
+2025-01-10 06:30:15.925 [info] Extension host (LocalProcess pid: 63914) is responsive.
+2025-01-10 06:48:00.617 [info] Extension host (LocalProcess pid: 63914) is unresponsive.
+2025-01-10 06:48:07.381 [info] Extension host (LocalProcess pid: 63914) is responsive.
+2025-01-10 06:48:07.382 [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+2025-01-10 06:50:45.854 [info] UNRESPONSIVE extension host: starting to profile NOW

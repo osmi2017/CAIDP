@@ -1084,7 +1084,7 @@ $("input[name=type_id]").change(function(){
 	let type_id = $(this).val();
 	if(type_id=="2"){
 		$("#nameBox").addClass("hide");
-		$("#denomminationBox").removeClass("hide");
+		$("#denominationBox").removeClass("hide");
 		// $("#denomination").attr("required", "required");
 		$("#titreBox").removeClass("hide");
 		// $("#qualiiteBox").removeClass("hide");
@@ -1116,7 +1116,7 @@ $("input[name=type_id]").change(function(){
 	}else{
 		// $("#qualiiteBox").addClass("hide");
 		$("#nameBox").removeClass("hide");
-		$("#denomminationBox").addClass("hide");
+		$("#denominationBox").addClass("hide");
 		$("#titreBox").addClass("hide");
 		$("#denomination").val("");
 		$("#titreBox").val("");

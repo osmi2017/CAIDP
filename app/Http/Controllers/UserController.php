@@ -58,9 +58,9 @@ class UserController extends Controller
         if($User->save()){
             $user = User::orderBy("id", "DESC")->limit(1)->first();
             // dd($user);
-            //if(!isset($donnees->user_id) && !is_null($user->email)){
-               //$User->notify(new NewAccount($password, $donnees->privilege, $organisme));
-            //}
+            if(!isset($donnees->user_id) && !is_null($user->email) && !is_null($user->caidp) && !is_null($user->caidp_id)){
+               $User->notify(new NewAccount($password, $donnees->privilege, $organisme));
+            }
             return true;
         }
     }

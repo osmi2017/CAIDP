@@ -416,7 +416,7 @@ class DemandeController extends Controller
                     $Mandant['profession'] = isset($request->professionMandant) ? $request->professionMandant : null;
                     $Mandant['ville'] = isset($request->domicileMandant) ? $request->domicileMandant : null;
                     $Mandant['type_mandant'] = isset($request->type_mandant) ? $request->type_mandant : null;
-                    $Mandant['denommination'] = isset($request->denommination) ? $request->denommination : null;
+                    $Mandant['denomination'] = isset($request->denomination) ? $request->denomination : null;
                     $Mandant['pieceMandant'] =  $this->uploadFiles($_FILES['pieceMandant'], $this->Mandant_Path);
                     \Session::put($Mandant);
                     
@@ -468,6 +468,7 @@ class DemandeController extends Controller
             
 
                 if(\Session::get('nom')){
+                    
                     $Mandant = new Mandant;
                     $Mandant->nom = \Session::get('nom');
                     $Mandant->prenom = \Session::get('prenom');
@@ -475,12 +476,12 @@ class DemandeController extends Controller
                     $Mandant->profession = \Session::get('profession');
                     $Mandant->ville = \Session::get('ville');
                     $Mandant->pieceMandant =  \Session::get('pieceMandant');
-                    $Mandant->denommination = \Session::get('denommination');
+                    $Mandant->denomination = \Session::get('denomination');
                     $Mandant->type_mandant = \Session::get('type_mandant');
                     $RequerantController = new RequerantController;
                     $saveMandant = $RequerantController->saveMandant($Mandant);
                     if($saveMandant){
-                        \Session::forget('nom', 'prenom', 'sexe', 'pieceMandant', 'type_mandant', 'denommination', 'ville', 'profession');
+                        \Session::forget('nom', 'prenom', 'sexe', 'pieceMandant', 'type_mandant', 'denomination', 'ville', 'profession');
                         $MandantID = $RequerantController->lastMandat();
                     }else{
                         $MandantID = null;

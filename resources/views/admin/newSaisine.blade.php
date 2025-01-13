@@ -237,7 +237,7 @@
                                     <span class="invalid-feedback"></span>
                                 </div>
                             </div>
-                            <div class="row clearfix hide" id="denomminationBox">
+                            <div class="row clearfix hide" id="denominationBox">
                                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
                                     <label for="secteur">Dénomination Entreprise/Structure</label>
                                 </div>
@@ -414,7 +414,7 @@
                                 <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                     <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" id="denommination" name="denommination"  class=" form-control sm-control" placeholder="" value="">
+                                            <input type="text" id="denomination" name="denomination"  class=" form-control sm-control" placeholder="" value="">
                                             
                                         </div>
                                     </div>
@@ -548,14 +548,14 @@
                             @if($Saisine->demande->mandant_id)
                             <table class="table table-striped">
                                 <caption>Information du mandataire</caption>
-                                @if($Saisine->demande->mandant->denommination!=null)
+                                @if($Saisine->demande->mandant->denomination!=null)
                                 <tr>
                                     <td>Dénomination</td>
-                                    <td>{{ $Saisine->demande->mandant->denommination }}</td>
+                                    <td>{{ $Saisine->demande->mandant->denomination }}</td>
                                 </tr>
                                 @endif
                                 <tr>
-                                    <th>{{ $Saisine->Demande->mandant->denommination!=null ? "Représentant" : "Nom et prénom" }}</th>
+                                    <th>{{ $Saisine->Demande->mandant->denomination!=null ? "Représentant" : "Nom et prénom" }}</th>
                                     <td>{{ $Saisine->demande->mandant->nom." ".$Saisine->demande->mandant->prenom }}</td>
                                 </tr>
                                 @if($Saisine->demande->mandant->email)
@@ -1003,7 +1003,7 @@
 	                        </div>
 	                        <div class="row clearfix">
 	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-	                                <label for="motif">Motif de la saisine <span>*</span> </label>
+	                                <label for="motif">Objet de la saisine <span>*</span> </label>
 	                            </div>
 	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
 	                                <div class="form-group">
@@ -1019,7 +1019,7 @@
 	                                <span class="invalid-feedback"></span>
 	                            </div>
 	                        </div>
-	                        <div class="row clearfix">
+	                        <div class="row clearfix" style="display:none">
 	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
 	                                <label for="description">Description </label>
 	                            </div>
@@ -1118,7 +1118,7 @@
 			                		<td>{{ $Saisine->etat }}</td>
 			                	</tr>
 			                	<tr>
-			                		<td>Accusé de reception/Documents</td>
+			                		<td>Documents</td>
 			                		<td>
 			                			<ul>
 			                				{{-- {{ dd($Saisine->docsaisine) }} --}}
