@@ -1049,19 +1049,37 @@
 	                        </div>
                             <div class="row clearfix">
 	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-	                                <label for="dateSaisine">Documents </label>
+	                                <label for="dateSaisine">Documents 1</label>
 	                            </div>
 	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                 <div id="file-container1">
 	                                <div class="form-group">
-	                                    <div class="">
-	                                    	<input type="file" class="form-control " name="documents[]" multiple>
-	                                    	<input type="text" class="file-name" placeholder="Nom du document">
-	                                   	</div>
+                                    @if($Saisine && $Saisine->demande->savebycaidp)
+                                        @foreach($saisine_doc as $file)
+                                        @if(is_array($file))
+                                        @foreach($file as $subFile)
+                                        <div class="document-item">
+                                                <input value="{{ asset('admincaidp/doc_saisines/' . $subFile) }}" >
+                                                <input type="text" class="file-name" placeholder="Nom du document" name="document_names1[]" value="{{ basename($subFile) }}">
+                                                <button type="button" class="remove-file1">Supprimer</button>
+                                            </div></br>
+                                            @endforeach
+                                            @else
+                                            <div class="document-item">
+                                            <input value="{{ asset('admincaidp/doc_saisines/' . $file) }}" >
+                                                <input type="text" class="file-name" placeholder="Nom du document" name="document_names1[]" value="{{ basename($file) }}">
+                                                <button type="button" class="remove-file1">Supprimer</button>
+                                                </div></br>
+                                            @endif
+                                        @endforeach
+                                    @else
+                                        <input type="file" class="form-control" name="documents1[]" multiple>
+                                        <input type="text" class="file-name" placeholder="Nom du document" name="document_names1[]">
+                                    @endif
                                            
 	                                </div>
                                 </div>
-                                <button type="button" id="add-file1">Ajouter un autre fichier1</button>
+                                <button type="button" id="add-file1">Ajouter un autre fichier</button>
 	                                <span class="invalid-feedback"></span>
 	                            </div>
 	                        </div>
@@ -1104,6 +1122,7 @@
 			                </div>
 			                <hr>
 			                @if($Saisine)
+                            
 			                <table class="table table-striped">
 			                	<tr>
 			                		<th>Objet de la saisine</th>
@@ -1116,22 +1135,43 @@
 			                	</tr>
 			                	<tr>
 			                		<th>Etat</th>
-			                		<td>{{ $Saisine->etat }}</td>
+                                    @php
+                                        $dateDemande = \Carbon\Carbon::parse($Saisine->demande->dateDemande);
+                                        $today = \Carbon\Carbon::now();
+                                        $daysDifference = $today->diffInDays($dateDemande);
+                                        $qualite = $Saisine->demande->requerant->qualite->qualite ?? '';
+
+                                        $bgClass = 'bg-info';
+                                        $text = 'non recevable';
+
+                                        if ($qualite == "Journaliste / Chercheur" && $daysDifference > 15) {
+                                            $bgClass = 'bg-danger';
+                                            $text = 'delais supérieur à 15 jours';
+                                        } elseif ($qualite != "Journaliste / Chercheur" && $daysDifference > 30) {
+                                            $bgClass = 'bg-danger';
+                                            $text = 'delais supérieur à 30 jours';
+                                        }
+                                    @endphp
+
+                                    <td class="{{ $bgClass }}">{{ $text }}</td>
+
+
 			                	</tr>
 			                	<tr>
 			                		<td>Documents</td>
 			                		<td>
-			                			<ul>
-			                				{{-- {{ dd($Saisine->docsaisine) }} --}}
-			                			@foreach($Saisine->docsaisine as $value)
-			                				<li>
-            									<a href="#" title="Zoomer" class="ZoomerIframe"><i class="fa fa-search-plus" ></i>Zoomer</a>
-            									<br>
-            									<iframe src="{{ asset("/docsaisines/".$value->document) }}" width="200"></iframe> <br>
-            									<span class="renameFile" data-type="saisine" contenteditable="" id="{{ $value->id }}" data-default="Nommer le fichier" data-change="{{ $value->nomFichier ? 1 : 0 }}">{{ $value->nomFichier ? $value->nomFichier : "Renommer le fichier ici" }}</span>
-            								</li>	
-			                			@endforeach
-			                			</ul>
+                                        
+                                    @foreach($saisine_doc as $file)
+                                          
+                                          @if(is_array($file))
+                                              <!-- Handle the case where $file is an array -->
+                                              @foreach($file as $subFile)
+                                                  <a href="{{ asset('admincaidp/doc_saisines/' . $subFile) }}" target="_blank">{{$subFile}}</a><br>
+                                              @endforeach
+                                          @else
+                                              <a href="{{ asset('admincaidp/doc-saisines/' . $file) }}" target="_blank">{{$file}}</a><br>
+                                          @endif
+                                      @endforeach
 			                			
 			                		</td>
 			                	</tr>
@@ -1260,7 +1300,7 @@
 	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
 	                                <div class="form-group">
 	                                    <div class="form-line">
-	                                    	<input type="text" name="actionContentieu" id="dateFacilitation" class="form-control " required="" list="actionContentieuList">
+	                                    	<input type="text" name="actionContentieu" id="actionContentieu" class="form-control " required="" list="actionContentieuList">
 	                                    	@if(!is_null($actionContentieu))
 	                                    	<datalist id="actionContentieuList">
 	                                    		@foreach($actionContentieu as $value)

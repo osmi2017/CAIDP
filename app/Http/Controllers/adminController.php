@@ -26,6 +26,7 @@ use App\Messag;
 use App\Http\Controllers\Organisme\DemandeController;
 use App\Demande;
 use App\Notifications\AlertOganismeSaisine;
+use App\Doccontentieu ;
 
 use Str;
 use PDF;
@@ -134,18 +135,27 @@ class adminController extends Controller
         $Qualiteresponsable = Qualiteresponsable::distinct('qualite')->get('qualite');
         
         $demande_doc[] =[];
+        $saisine_doc[] =[];
         if($Saisine){
+        $saisine_id=$Saisine->id;
         $demandeId = $Saisine->demande->id;
         $directory = public_path('admincaidp/demandes');
+        $directory1 = public_path('admincaidp/doc_saisines');
         
         $files = glob($directory . '/' . $demandeId . '*');
+        $files1 = glob($directory1 . '/' . $saisine_id . '*');
         //dd($files );
         
         foreach ($files as $file) {
             $demande_doc[] = basename($file);
         }
+
+        foreach ($files1 as $file1) {
+            $saisine_doc[] = basename($file1);
+        }
+       
     }
-    	return view('admin.newSaisine', compact('Type', 'Saisinepredefinies', 'QualiteOrg', 'QualiteReq', 'Secteurs', 'Typesecteurs', 'Qualiteresponsable', 'Organisme', 'Decisionpredefiniescaidp', 'Param', 'Saisine', 'RespoInfo', 'actionFacilitation', 'actionContentieu', 'Decisioncaipdp','messages','demande_doc'));
+    	return view('admin.newSaisine', compact('Type', 'Saisinepredefinies', 'QualiteOrg', 'QualiteReq', 'Secteurs', 'Typesecteurs', 'Qualiteresponsable', 'Organisme', 'Decisionpredefiniescaidp', 'Param', 'Saisine', 'RespoInfo', 'actionFacilitation', 'actionContentieu', 'Decisioncaipdp','messages','demande_doc','saisine_doc'));
     }
 
     public function saveDemandeur(Request $request){
@@ -368,13 +378,14 @@ class adminController extends Controller
             // 'argument' => 'required',
             'saisine_id' => 'required'
         ]);
-
+        
         if($validator->fails()){
             return $validator->errors()->all();
         }
-
+        
+        
         if(isset($request->contentieu_id)){
-            $Contentieu = Contentieu::find($facilitation_id);
+            $Contentieu = Contentieu::find($request->contentieu_id);
         }else{
             $Contentieu = new Contentieu;
         }
@@ -653,14 +664,21 @@ class adminController extends Controller
 
     public function supContentieu(Request $request){
         $id = $request->id;
-        $Facilitation = Contentieu::find($id);
-        if($Facilitation){
-            if($Facilitation->delete()){
-                return json_encode(['error'=>false]);
+        $Contentieu = Contentieu::find($id);
+        
+        if($Contentieu) {
+            // Delete related Doccontentieu records before deleting Contentieu
+            Doccontentieu::where('contentieu_id', $id)->delete();
+            
+            // Now delete the Contentieu record
+            if($Contentieu->delete()) {
+                return json_encode(['error' => false]);
             }
         }
-        return json_encode(['error'=>true]);
+        
+        return json_encode(['error' => true]);
     }
+    
 
     public function finaliseSaisine(Request $request){
         if($request->decision_id){

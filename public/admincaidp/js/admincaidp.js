@@ -863,6 +863,7 @@ $(document).on("click", ".editFacilitation", function(){
 	return false;
 });
 $(document).on("click", ".editContentieu", function(){
+	
 	var id = $(this).attr('id'),
 		parent = $(this).parent().parent(),
 		Bigparent = $(this).parent().parent().parent().parent().parent().parent();
@@ -871,9 +872,16 @@ $(document).on("click", ".editContentieu", function(){
 		Bigparent.find("#dateContentieux").val(dateFacilitation);
 
 		var actionFacilitation = parent.find('td.td_actionContentieu').text();
+		
 		Bigparent.find("#actionContentieu").val(actionFacilitation);
 
-		var suite = parent.find('td.td_argument').data('suite');
+		var suite = parent.find('td.td_argument p').text();
+		
+		var editor = CKEDITOR.instances.argument;
+		
+		
+			editor.setData(suite);
+		
 		Bigparent.find("#argument").val(suite);
 		Bigparent.find("#contentieuHiddenBox").empty().append("<input name='contentieu_id' type='hidden' value='"+id+"'>");
 	$(".addArgumentBtn").trigger('click');
@@ -953,6 +961,7 @@ function ory(){
 }
 
 $(".supContentieu").each(function(){
+	
 	$(this).click(function(){
 		var id = $(this).attr('id'),
 			c = $(this);
@@ -960,7 +969,9 @@ $(".supContentieu").each(function(){
 		if(!confirm("Voulez-vous vraiment supprimer l'action ?")){
 			return false;
 		}
+		
 		$.get('supprimer-contentieu', {id:id}, function(data){
+			
 			var m = JSON.parse(data);
 			if(m.error!=true){
 				c.parent().parent().remove();

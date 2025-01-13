@@ -74,7 +74,7 @@
 		@foreach($Saisine->contentieu as $value)
 		<tr>
 			<td class="td_dateContentieux">{{ $value->dateContentieux }}</td>
-                  <td class="td_actionContentieu">{{ $value->actionContentieu }}</td>
+      <td class="td_actionContentieu">{{ $value->actionContentieu }}</td>
 			<td class="td_argument">
 				{!! $value->argument !!}
 				@if($value->doccontentieu)
