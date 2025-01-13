@@ -441,7 +441,7 @@ $(document).ready(function(){
 		for (var [key, value] of d.entries()) {
 			console.log(key + ": " + value);
 		}
-		alert(f[0])
+		//alert(f[0])
 		crf();
 		$.ajax({
 	        url: '../enregistrer-demande',
