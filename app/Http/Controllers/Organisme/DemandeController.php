@@ -497,7 +497,7 @@ class DemandeController extends Controller
                 // dd($this->findAuthrespo());
         $organisme_id = $this->findAuthrespo()->responsable ? $this->findAuthrespo()->responsable->organisme_id: $_POST['orga_id'];
 
-        
+        //dd($organisme_id);
 
         $data['libelle'] = $_POST['libelle'];
         $data['dateDemande'] = $_POST['dateDemande'];

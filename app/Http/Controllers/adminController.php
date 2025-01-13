@@ -163,7 +163,7 @@ class adminController extends Controller
             'auteurSaisine' => 'required|',
             
         ]);
-
+          
         if($validator->fails()){
             return $validator->errors()->all();
         }
@@ -193,21 +193,28 @@ class adminController extends Controller
         if($Saisine->save()){
             $saisine_id = $request->saisine_id ? $request->saisine_id : $this->lastSaisine()->id;
             $this->checkDemandeLiquide($request->demande_id, $request->motif);
-            $demande = Demande::find($request->demande_id);          
+            $demande = Demande::find($request->demande_id);  
+                   
             $authenticatedUser = Auth::user();
             $requerant = User::find($demande->requerant_id);
             $organisme = $demande->organisme_id;
+            
                 if ($requerant && $organisme) {
+                    
                                         
                     $user_organisme = User::whereHas('responsable', function ($query) use ($organisme) {
-                        $query->where('organisme_id', $organismeId);
+                        $query->where('organisme_id', $organisme);
                     })->get();
-                    $requerant->notify(new AlertOganismeSaisine($demande, $Saisine,$authenticatedUser));
-                    $user_organisme->notify(new AlertOganismeSaisine($demande, $Saisine,$authenticatedUser));
+                    
+                   // $requerant->notify(new AlertOganismeSaisine($demande, $Saisine,$authenticatedUser));
+                    //dd('ici'); 
+                   // $user_organisme->notify(new AlertOganismeSaisine($demande, $Saisine,$authenticatedUser));
+                    
                 }
             if(!empty($_FILES['documents'])){
                 $this->saveDocsaisine($_FILES, $saisine_id);
             }
+            //dd('la'); 
             $data['error'] = false;
             $data['saisine_id'] = $saisine_id;
             $data['message'] = "La saisine a été enregistrée avec succès !";

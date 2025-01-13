@@ -39,9 +39,11 @@
 		<td>Date de reception</td>
 		 <td> {{ $DateRewrite->dateTimeFrancais($Saisine->created_at) }} </td>
 	</tr>
+	@if($Demandeur->requerant)
 	<tr>
+	
 		<td>Demandeur</td>
-		<td>{{ $Demandeur->requerant->nom." ".$Demandeur->requerant->prenom." " }}</td>
+		<td>{{ $Demandeur->requerant->name." ".$Demandeur->requerant->prenom." " }}</td>
 	</tr>
 	<tr>
 		<td>Contact</td>
@@ -53,7 +55,7 @@
 		<td>{{ $Demandeur->requerant->email}}</td>
 	</tr>
 	@endif
-	
+	@endif
 	
 </table>
 	

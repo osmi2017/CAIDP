@@ -202,6 +202,7 @@ class InscriptionController extends Controller
 		$data = json_encode($data);
 
         if(isset($request->organisme_id) && !is_null($request->organisme_id)){
+            //dd($request->organisme_id);
             $organisme = Organisme::find($request->organisme_id);
         }else{
             $organismeName = Organisme::whereOrganisme($request->organisme)->first();
@@ -230,9 +231,10 @@ class InscriptionController extends Controller
     	$organisme->logo = $logo;
         $organisme->savebycaidp =isset($request->savebycaidp) ? $request->savebycaidp : null;
         $organisme->savebyorganisme =isset($request->savebyorganisme) ? $request->savebyorganisme : null;
-    	// dd($organisme);
+    	//dd($organisme);
     	if($organisme->save()){
-    		$this->ValidationDecision($this->lastOrganisme()->id);
+            
+    		$this->ValidationDecision($organisme->id);
     		// ==================================
     		$data = array();
 			$email = $request->emailrespo;
@@ -277,7 +279,7 @@ class InscriptionController extends Controller
             $responsable->ri = isset($request->ri) ? true : null ;
             $responsable->rh = isset($request->rh) ? true : null ;
 
-            $organisme_id = $this->lastOrganisme()->id;
+            $organisme_id = $organisme->id;
     		$responsable->organisme_id = $organisme_id;
 
     		$ResponsableController = new ResponsableController;

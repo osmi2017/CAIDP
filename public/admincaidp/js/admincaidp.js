@@ -438,7 +438,10 @@ $(document).ready(function(){
 
 	function sendDemande(f){
 		var d = new FormData(f[0]);
-		
+		for (var [key, value] of d.entries()) {
+			console.log(key + ": " + value);
+		}
+		alert(f[0])
 		crf();
 		$.ajax({
 	        url: '../enregistrer-demande',

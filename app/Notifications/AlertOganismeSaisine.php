@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
+use App\Saisine;
 
 class AlertOganismeSaisine extends Notification
 {
@@ -57,14 +58,18 @@ class AlertOganismeSaisine extends Notification
         $objet = "Nouvelle saisine";
         $MailMessage = new MailMessage;
         $Informations = $this->Informations($Demande->id);
+        
         $libelle = null;
         $Information = $Informations['Information'];
+       
         // ======================== Joindre les documents ==========================
         if($Information){
-            if($Information->information!=null){
-                $libelle = $Information->information;
+          
+            if($Information!=null){
+                $libelle = $Information;
             }
-            if($Information->document){
+        }
+          /*  if($Informations->document){
                 foreach($Information->document as $value){
                     $MailMessage->attach(public_path().$this->Document_Path.$value->document);
                 }
@@ -73,12 +78,12 @@ class AlertOganismeSaisine extends Notification
         }
         // ======================== Joindre les documents ==========================
         // ======================== Joindre la decision ==========================
-        $Decision = $this->Decision($Demande->id);
+       /* $Decision = $this->Decision($Demande->id);
         if($Decision){
             if($Decision->isDecision==1 && $Decision->notificationFile!=null){
                 $MailMessage->attach(public_path().$this->Decision_Path.$Decision->notificationFile);
             }
-        }
+        }*/
         // ======================== Joindre la decision ==========================
 
         
@@ -103,9 +108,29 @@ class AlertOganismeSaisine extends Notification
         $data['demande_id'] = $this->Demande->id;
         $data['motif'] = $this->Saisine->motif;
         $data['created_at'] = $this->Saisine->created_at;
-        $data['requerant_nom'] = $this->User->requerant->nom." ".$this->User->requerant->prenom;
-        $data['requerant_contact'] = $this->User->requerant->contact;
-        $data['requerant_email'] = $this->User->requerant->email;
+        //$data['requerant_nom'] = $this->User->requerant->nom." ".$this->User->requerant->prenom;
+        //$data['requerant_contact'] = $this->User->requerant->contact;
+        //$data['requerant_email'] = $this->User->requerant->email;
         return $data;
     }
+
+    public function Informations($demandeId)
+    {
+        // Query the Saisine table for the specific demande_id
+        $saisine = Saisine::where('demande_id', $demandeId)->first();
+    
+        if ($saisine) {
+            return [
+                'Information' => $saisine->resume, // Retrieve the 'resume' field
+                'document' => $saisine->documents ?? [], // Add related documents if needed
+            ];
+        }
+    
+        // Default response if no saisine is found
+        return [
+            'Information' => 'Ceci doit être définie', // Default message
+            'document' => [],
+        ];
+    }
+
 }

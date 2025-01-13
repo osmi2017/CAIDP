@@ -764,6 +764,7 @@
 			                </div>
 			                <hr>
 			                @if($Saisine)
+                           
 			                <table class="table table-striped">
 			                	<caption><h4>Information organisme</h4></caption>
                                
@@ -935,7 +936,7 @@
                                 </div>
                             	<a href="#" class="btn btn-default pull-left btn-lg previous  waves-effect" ><i class="fa fa-chevron-left"></i> Précédent </a>
                             	<a href="#" class="btn btn-info pull-right btn-lg next hide waves-effect" style="margin-left: 10px">Suivant <i class="fa fa-chevron-right"></i></a>
-			                    <a href="#" class="btn btn-success pull-right btn-lg send" id="sendInform" class="waves-effect"><span><i class="fa fa-save"></i></span> Enregistrer</a>
+			                    <a href="#" class="btn btn-success pull-right btn-lg send" id="sendInform" class="waves-effect"><span><i class="fa fa-save"></i></span> Enregistrer1</a>
 			                </div>        
                             
                         </form>

@@ -186,7 +186,7 @@ class DocumentController extends Controller
  
     public function destroy(Request $request, $id) 
     {
-        dd("ici");
+        //dd("ici");
         $documents = Document::find($id);
         if($documents->delete())
             {
