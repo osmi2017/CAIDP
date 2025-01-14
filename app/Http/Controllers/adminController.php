@@ -239,7 +239,11 @@ class adminController extends Controller
                             $originalName = $file->getClientOriginalName(); // Original file name
                             $originalExtension = $file->getClientOriginalExtension();
                             $customName = $allDocumentNames[$index] ?? $originalName; // Custom name or original name
+                            if($customName != $originalName){
                             $finalName = $saisineID .'_'.$customName.'.'.$originalExtension ;
+                            }else{
+                                $finalName = $saisineID .'_'.$customName  ;
+                            }
                             //dd($allDocumentNames );
                             // Store the file with the custom name
                             //dd($originalName);
@@ -252,8 +256,12 @@ class adminController extends Controller
                         // Handle case where a single file is uploaded, not an array of files
                         $originalName = $documents->getClientOriginalName(); 
                         $originalExtension = $documents->getClientOriginalExtension();
-                        $customName = $allDocumentNames[0] ?? $originalName; 
-                        $finalName = $saisineID .'_'.$customName;
+                        $customName = $allDocumentNames[$index] ?? $originalName;
+                        if($customName != $originalName){
+                        $finalName = $saisineID .'_'.$customName.'.'.$originalExtension;
+                        }else{
+                            $finalName = $saisineID .'_'.$customName  ;
+                        }
                         //dd($finalName);
                         // Store the file with the custom name
                         $filePath = $documents->storeAs('admincaidp/doc_saisines', $finalName,'public');

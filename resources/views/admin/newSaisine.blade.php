@@ -1137,20 +1137,29 @@
 			                		<th>Etat</th>
                                     @php
                                         $dateDemande = \Carbon\Carbon::parse($Saisine->demande->dateDemande);
-                                        $today = \Carbon\Carbon::now();
-                                        $daysDifference = $today->diffInDays($dateDemande);
+                                        $dateSaisine = \Carbon\Carbon::parse($Saisine->dateSaisine);
+                                        $daysDifference = $dateSaisine->diffInDays($dateDemande);
                                         $qualite = $Saisine->demande->requerant->qualite->qualite ?? '';
 
-                                        $bgClass = 'bg-info';
-                                        $text = 'non recevable';
+                                        $bgClass = 'bg-danger';
+                                        $text = 'Saisine non recevable ';
 
-                                        if ($qualite == "Journaliste / Chercheur" && $daysDifference > 15) {
-                                            $bgClass = 'bg-danger';
-                                            $text = 'delais supérieur à 15 jours';
-                                        } elseif ($qualite != "Journaliste / Chercheur" && $daysDifference > 30) {
-                                            $bgClass = 'bg-danger';
-                                            $text = 'delais supérieur à 30 jours';
+                                        if ($qualite == "Journaliste / Chercheur"){
+                                            if($nbreRestant= 15-$daysDifference){$text = $text.' ( '.$nbreRestant.' jour(s) restant(s) avant saisine possible)';
+                                            }
+                                            if ($daysDifference >= 15) {
+                                            $bgClass = 'bg-info';
+                                            $text = 'Saisine recevable';
+                                            }
+                                             }
+                                         elseif ($qualite != "Journaliste / Chercheur") {
+                                            if($nbreRestant= 30-$daysDifference){$text = $text.' ( '.$nbreRestant.' jour(s) restant(s) avant saisine possible)';
+                                            }
+                                            if ($daysDifference >=30) {
+                                            $bgClass = 'bg-info';
+                                            $text = 'Saisine recevable';
                                         }
+                                    }
                                     @endphp
 
                                     <td class="{{ $bgClass }}">{{ $text }}</td>
@@ -1158,7 +1167,7 @@
 
 			                	</tr>
 			                	<tr>
-			                		<td>Documents</td>
+			                		<td>Document(s)</td>
 			                		<td>
                                         
                                     @foreach($saisine_doc as $file)
@@ -1169,7 +1178,7 @@
                                                   <a href="{{ asset('admincaidp/doc_saisines/' . $subFile) }}" target="_blank">{{$subFile}}</a><br>
                                               @endforeach
                                           @else
-                                              <a href="{{ asset('admincaidp/doc-saisines/' . $file) }}" target="_blank">{{$file}}</a><br>
+                                              <a href="{{ asset('admincaidp/doc_saisines/' . $file) }}" target="_blank">{{$file}}</a><br>
                                           @endif
                                       @endforeach
 			                			
