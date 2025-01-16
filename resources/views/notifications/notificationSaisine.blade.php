@@ -65,7 +65,7 @@
 		Information communiquée suite à la demande
 	</h3>
 	<p style="padding: 0 10px;">
-	{!! $libelle !!}
+	{!! $libelle !!}	
 	</p>
 
 	<br>
