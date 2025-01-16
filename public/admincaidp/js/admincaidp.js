@@ -1211,29 +1211,34 @@ $(document).on("click", ".remove-file1", function() {
 	$(this).closest(".file-group1").remove();
 });
 
-$.ajaxSetup({
-    headers: {
-        'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
-    }
-});
+
 
 $('.remove-file1').on('click', function() {
-	
-	var filename = $(this).closest('.document-item').data('filename');
-	
-	if (confirm('Are you sure you want to delete this file?')) {
+	var $item = $(this).closest('.document-item');
+	var filename = $item.find('.file-name').val();
+	//alert(filename)
+	if (confirm('Êtes vous sûre de vouloir supprimer ce document?')) {
 		crf();
 		$.ajax({
-			url: '/documents/' + filename, // Adjust the URL as needed
-			type: 'DELETE',
+			url: 'documents/delete/', // Adjust the URL as needed
+			type: 'POST',
 			data: {
-				_token: '{{ csrf_token() }}' // Include CSRF token for security
+				filename:filename,
 			},
 			success: function(response) {
-				alert('File deleted successfully.');
-				// Optionally remove the file item from the DOM
-				$(this).closest('.document-item').remove();
-			},
+				console.log(response.status);
+				
+				if (response.status === 'success') {
+					console.log($item )
+                    alert(response.message);
+					
+					$item.fadeOut(300, function() {
+						$item.remove();
+					});
+                } else {
+                    alert(response.message);
+                }
+            },
 			error: function(xhr) {
 				console.log(xhr.responseText)
 				alert('Error deleting file: ' + xhr.responseText);

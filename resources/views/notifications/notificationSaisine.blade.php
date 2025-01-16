@@ -18,11 +18,11 @@
 	@endif
 	<tr>
 		<td>Numéro de la saisine </td>
-		<td style="color: blue; font-weight: bold;">{{ $Demande->numSaisine }}</td>
+		<td style="color: blue; font-weight: bold;">{{ $Saisine->numSaisine }}</td>
 	</tr>
 	
 	<tr>
-		<td>Demande objet de la saisine </td>
+		<td>Demande objet de la Demande</td>
 		<td style="color: blue; font-weight: bold;">{{ $Demande->libelle }}</td>
 	</tr>
 	
@@ -65,7 +65,7 @@
 		Information communiquée suite à la demande
 	</h3>
 	<p style="padding: 0 10px;">
-		{{ $libelle }}
+	{!! $libelle !!}
 	</p>
 
 	<br>

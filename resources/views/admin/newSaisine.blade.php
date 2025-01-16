@@ -864,7 +864,7 @@
                             </div>
                             <div class="row clearfix">
 	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-	                                <label for="dateSaisine">Document(s) </label>
+	                                <label for="dateSaisine">Document(s)1 </label>
 	                            </div>
 	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                 <div id="file-container">
@@ -875,15 +875,15 @@
                                         @if(is_array($file))
                                         @foreach($file as $subFile)
                                         <div class="document-item">
-                                                <input value="{{ asset('admincaidp/demandes/' . $subFile) }}" >
-                                                <input type="text" class="file-name" placeholder="Nom du document" name="document_names[]" value="{{ basename($subFile) }}">
+                                                <input value="{{ asset('admincaidp/demandes/' . $subFile) }}" style="display:none">
+                                                <input type="text" class="file-name" placeholder="Nom du document" name="document_names[]" value="{{ basename($subFile) }}" readonly>
                                                 <button type="button" class="remove-file1">Supprimer</button>
                                             </div></br>
                                             @endforeach
                                             @else
                                             <div class="document-item">
-                                            <input value="{{ asset('admincaidp/demandes/' . $file) }}" >
-                                                <input type="text" class="file-name" placeholder="Nom du document" name="document_names[]" value="{{ basename($file) }}">
+                                            <input value="{{ asset('admincaidp/demandes/' . $file) }}" style="display:none">
+                                                <input type="text" class="file-name" placeholder="Nom du document" name="document_names[]" value="{{ basename($file) }}" readonly>
                                                 <button type="button" class="remove-file1">Supprimer</button>
                                                 </div></br>
                                             @endif
@@ -936,7 +936,7 @@
                                 </div>
                             	<a href="#" class="btn btn-default pull-left btn-lg previous  waves-effect" ><i class="fa fa-chevron-left"></i> Précédent </a>
                             	<a href="#" class="btn btn-info pull-right btn-lg next hide waves-effect" style="margin-left: 10px">Suivant <i class="fa fa-chevron-right"></i></a>
-			                    <a href="#" class="btn btn-success pull-right btn-lg send" id="sendInform" class="waves-effect"><span><i class="fa fa-save"></i></span> Enregistrer1</a>
+			                    <a href="#" class="btn btn-success pull-right btn-lg send" id="sendInform" class="waves-effect"><span><i class="fa fa-save"></i></span> Enregistrer</a>
 			                </div>        
                             
                         </form>
@@ -1049,7 +1049,7 @@
 	                        </div>
                             <div class="row clearfix">
 	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-	                                <label for="dateSaisine">Documents 1</label>
+	                                <label for="dateSaisine">Document(s)</label>
 	                            </div>
 	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                 <div id="file-container1">
@@ -1059,15 +1059,15 @@
                                         @if(is_array($file))
                                         @foreach($file as $subFile)
                                         <div class="document-item">
-                                                <input value="{{ asset('admincaidp/doc_saisines/' . $subFile) }}" >
-                                                <input type="text" class="file-name" placeholder="Nom du document" name="document_names1[]" value="{{ basename($subFile) }}">
+                                                <input value="{{ asset('admincaidp/doc_saisines/' . $subFile) }}" style="display:none">
+                                                <input type="text" class="file-name" placeholder="Nom du document" name="document_names1[]" value="{{ basename($subFile) }}" readonly>
                                                 <button type="button" class="remove-file1">Supprimer</button>
                                             </div></br>
                                             @endforeach
                                             @else
                                             <div class="document-item">
-                                            <input value="{{ asset('admincaidp/doc_saisines/' . $file) }}" >
-                                                <input type="text" class="file-name" placeholder="Nom du document" name="document_names1[]" value="{{ basename($file) }}">
+                                            <input value="{{ asset('admincaidp/doc_saisines/' . $file) }}" style="display:none">
+                                                <input type="text" class="file-name" placeholder="Nom du document" name="document_names1[]" value="{{ basename($file) }}" readonly>
                                                 <button type="button" class="remove-file1">Supprimer</button>
                                                 </div></br>
                                             @endif
@@ -1083,7 +1083,32 @@
 	                                <span class="invalid-feedback"></span>
 	                            </div>
 	                        </div>
-	                        <hr>
+	                       
+                            <div class="row clearfix">
+	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+	                                <label for="dateSaisine">Envoyer un mail au requerant </label>
+	                            </div>
+                                <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+	                                <div class="form-group">
+	                                    
+                                        <input type="checkbox" id="notifier_requerant" name="notifier_requerant" value="oui" style="all: revert;" checked>
+                                      
+                                    </div>
+                                </div>
+                           </div>
+                              <div class="row clearfix">
+	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+	                                <label for="dateSaisine">Envoyer un mail à l'organisme  </label>
+	                            </div>
+                                <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+	                                <div class="form-group">
+	                                   
+                                        <input type="checkbox" class="bg-success" id="notifier_organisme" name="notifier_organisme" value="oui" style="all: revert;" checked>
+                                    
+                                    </div>
+                                </div>
+                           </div>
+                           <hr>
 	                        <div class="row clearfix">
 	                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
 	                                <label for="dateSaisine">Résumé de l'affaire </label>
@@ -1187,7 +1212,7 @@
 			                	<tr>
 			                		<th>Résumé</th>
 			                		<td>{!! $Saisine->resume !!}</td>
-			                	</tr>
+			                 	</tr>
 			                	
 			                </table>
 			                @endif

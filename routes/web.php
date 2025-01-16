@@ -79,7 +79,7 @@ Route::group(['namespace'=>'Organisme'], function(){
 
 		route::get('imprimer-rapport/{n?}', 'RapportController@imprimerRapport')->name('imprimerRapport');
 		
-		Route::delete('/documents/{file}',  'DocumentController@destroy1')->name('documents.destroy');
+		
 
 });
 
@@ -192,7 +192,8 @@ Route::group(['prefix'=>'administrateurs'], function(){
 	route::post('/saveDecision', 'adminController@saveDecision');	
 	route::get('/finaliser-saisine', 'adminController@finaliseSaisine');	
 	route::get('/supprimer-facilitation', 'adminController@supprimerFacilitation');	
-	route::get('nouvelle-saisine-{n?}', 'adminController@newSaisine')->name('admin.newSaisine');		
+	route::get('nouvelle-saisine-{n?}', 'adminController@newSaisine')->name('admin.newSaisine');
+	Route::post('/documents/delete/',  'adminController@destroydoc')->name('admin.destroydoc');		
 });	
 
 /*==========================END ROUTE ADMIN ===================================*/ 

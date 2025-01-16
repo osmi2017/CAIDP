@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Organisme;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Support\Str;
@@ -542,15 +543,25 @@ class DemandeController extends Controller
                     // Ensure that $documents is an array (it could be an array of files or a single file)
                     if (is_array($documents)) {
                         foreach ($documents as $index => $file) {
+                            $len_documents = count($documents);
+                            $len_allDocumentNames = count($allDocumentNames);
+                            $valid_index= $len_allDocumentNames -($len_documents-$index);
                             $originalName = $file->getClientOriginalName(); // Original file name
                             $originalExtension = $file->getClientOriginalExtension();
-                            $customName = $allDocumentNames[$index] ?? $originalName; // Custom name or original name
-                            $finalName = $demandeID .'_'.$customName.'.'.$originalExtension ;
-                            
-                            // Store the file with the custom name
+                            $customName = $allDocumentNames[$valid_index] ?? $originalName; // Custom name or original name
+                            $fileExists = $this->checkIfFileExists($customName, 'admincaidp/demandes');
+                            if($customName != $originalName){
+                                $finalName = $demandeID.'_'.$customName.'.'.$originalExtension ;
+                                }else{
+                                    $finalName = $demandeID.'_'.$customName  ;
+                                }
+                                //dd($allDocumentNames );
+                                // Store the file with the custom name
+                                //dd($originalName);
+                                if (($file->isValid())&&($fileExists==false)) {
                             
                             $filePath = $file->storeAs('admincaidp/demandes', $finalName,'public');
-                            
+                                }
                         }
                     } else {
                         // Handle case where a single file is uploaded, not an array of files
@@ -857,7 +868,15 @@ class DemandeController extends Controller
 
 
 
+    function checkIfFileExists(string $fileName, string $folderPath): bool
+    {
+        // Combine the folder path and file name
+        $filePath = rtrim($folderPath, '/') . '/' . $fileName;
     
+        // Check if the file exists in the specified folder
+        return Storage::exists($filePath);
+    }
+     
 
     
 

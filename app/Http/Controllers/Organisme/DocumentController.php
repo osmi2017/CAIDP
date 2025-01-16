@@ -186,7 +186,7 @@ class DocumentController extends Controller
  
     public function destroy(Request $request, $id) 
     {
-        //dd("ici");
+        dd("la");
         $documents = Document::find($id);
         if($documents->delete())
             {
@@ -197,18 +197,5 @@ class DocumentController extends Controller
         }
     }
 
-    public function destroy1($file)
-{
-    // Define the path to the file
-    $filePath = 'admincaidp/demandes/' . $file;
-    dd($file);
-    // Check if the file exists
-    if (Storage::exists($filePath)) {
-        // Delete the file
-        Storage::delete($filePath);
-        return redirect()->back()->with('success', 'File deleted successfully1.');
-    } else {
-        return redirect()->back()->with('error', 'File not found.');
-    }
-}
+    
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 use App\Saisine;
 use Illuminate\Database\Eloquent\Builder;
@@ -27,6 +28,7 @@ use App\Http\Controllers\Organisme\DemandeController;
 use App\Demande;
 use App\Notifications\AlertOganismeSaisine;
 use App\Doccontentieu ;
+
 
 use Str;
 use PDF;
@@ -197,7 +199,7 @@ class adminController extends Controller
             $Globals =  new \App\Tools\Globals;
             $Saisine->numSaisine = $Globals->numeroSaisine();
             $Saisine->auteurSaisine = $request->auteurSaisine;
-        }
+        }   
         $Saisine->resume = trim($request->resume) ? trim($request->resume) : null;
         $Saisine->savebycaidp = isset($request->savebycaidp) ? 1 : null;
         if($Saisine->save()){
@@ -206,21 +208,21 @@ class adminController extends Controller
             $demande = Demande::find($request->demande_id);  
                    
             $authenticatedUser = Auth::user();
-            $requerant = User::find($demande->requerant_id);
-            $organisme = $demande->organisme_id;
+            $requerant = User::where('requerant_id', $demande->requerant_id)->first();;
+            $responsable = Responsable::where('organisme_id', $demande->organisme_id)->first();
+            $user_responsable =User::where('responsable_id', $responsable->id)->first();
             
-                if ($requerant && $organisme) {
-                    
-                                        
-                    $user_organisme = User::whereHas('responsable', function ($query) use ($organisme) {
-                        $query->where('organisme_id', $organisme);
-                    })->get();
-                    
-                   // $requerant->notify(new AlertOganismeSaisine($demande, $Saisine,$authenticatedUser));
+               
+                    if(isset($request->notifier_requerant)){ 
+                       // dd($requerant);
+                   $requerant->notify(new AlertOganismeSaisine($demande, $Saisine,$authenticatedUser));
+                    }
                     //dd('ici'); 
-                   // $user_organisme->notify(new AlertOganismeSaisine($demande, $Saisine,$authenticatedUser));
-                    
-                }
+                    if(isset($request->notifier_organisme)){ 
+                        //dd($organisme);
+                        $user_responsable->notify(new AlertOganismeSaisine($demande, $Saisine,$authenticatedUser));
+                    } 
+                
             if(!empty($_FILES['documents'])){
                 $this->saveDocsaisine($_FILES, $saisine_id);
             }
@@ -236,9 +238,16 @@ class adminController extends Controller
                     // Ensure that $documents is an array (it could be an array of files or a single file)
                     if (is_array($documents)) {
                         foreach ($documents as $index => $file) {
+                            $len_documents = count($documents);
+                            $len_allDocumentNames = count($allDocumentNames);
+                            $valid_index= $len_allDocumentNames -($len_documents-$index);
                             $originalName = $file->getClientOriginalName(); // Original file name
                             $originalExtension = $file->getClientOriginalExtension();
-                            $customName = $allDocumentNames[$index] ?? $originalName; // Custom name or original name
+                            $customName = $allDocumentNames[$valid_index] ?? $originalName; // Custom name or original name
+                            
+                            //dd($allDocumentNames);
+                            $fileExists = $this->checkIfFileExists($customName, 'admincaidp/doc_saisines');
+                            //dd($originalName.' '.$customName.' '.$index);
                             if($customName != $originalName){
                             $finalName = $saisineID .'_'.$customName.'.'.$originalExtension ;
                             }else{
@@ -247,7 +256,7 @@ class adminController extends Controller
                             //dd($allDocumentNames );
                             // Store the file with the custom name
                             //dd($originalName);
-                            if ($file->isValid()) {
+                            if (($file->isValid())&&($fileExists==false)) {
                                 // Proceed with storing the file
                                 $filePath = $file->storeAs('admincaidp/doc_saisines', $finalName, 'public');
                             }
@@ -257,6 +266,7 @@ class adminController extends Controller
                         $originalName = $documents->getClientOriginalName(); 
                         $originalExtension = $documents->getClientOriginalExtension();
                         $customName = $allDocumentNames[$index] ?? $originalName;
+                        
                         if($customName != $originalName){
                         $finalName = $saisineID .'_'.$customName.'.'.$originalExtension;
                         }else{
@@ -740,11 +750,52 @@ class adminController extends Controller
     }
 
     
-
+    function checkIfFileExists(string $fileName, string $folderPath): bool
+    {
+        // Combine the folder path and file name
+        $filePath = rtrim($folderPath, '/') . '/' . $fileName;
+    
+        // Check if the file exists in the specified folder
+        return Storage::exists($filePath);
+    }
     
 
 
     
 
-    // public function emailChecker()
+    public function destroydoc(Request $request)
+{
+    // Define the path to the file
+    $filename = $request->input('filename');
+    $filePath = 'admincaidp/demandes/' . $filename;
+    $filePath1 ='admincaidp/doc_saisines/' . $filename;
+
+    // Check if the file exists in the public disk
+    if (Storage::disk('public')->exists($filePath)) {
+        // Delete the file
+        Storage::disk('public')->delete($filePath);
+
+        // Return a JSON response for success
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Document supprimé avec succès'
+        ]);
+    }elseif (Storage::disk('public')->exists($filePath1)) {
+        // Delete the file
+        Storage::disk('public')->delete($filePath1);
+
+        // Return a JSON response for success
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Document supprimé avec succès'
+        ]);
+    }else {
+        // Return a JSON response for failure
+        return response()->json([
+            'status' => 'error',
+            'message' => 'Document non répertorié'
+        ]);
+    }
+}
+
 }
