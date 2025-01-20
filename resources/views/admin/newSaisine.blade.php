@@ -100,6 +100,34 @@
             align-items: center;
             gap: 10px;
         }
+        .spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    pointer-events: none; /* Prevent interference with user interactions */
+}
+
+.spinner {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 </style>
 <div class="modal fade bd-example-modal-xl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
@@ -958,7 +986,8 @@
 			                	</tr>
 			                	<tr>
 			                		<th>Date de soumission</th>
-			                		<td>{{ $Saisine->demande->dateDemande }}</td>
+			                		<td>{{ \Carbon\Carbon::parse($Saisine->demande->dateDemande)->format('d/m/Y') }}
+                                    </td>
 			                	</tr>
                                 <tr>
 			                		<th>Documents</th>
@@ -1156,7 +1185,7 @@
 			                	
 			                	<tr>
 			                		<th>Date de saisine</th>
-			                		<td>{{ $Saisine->dateSaisine }}</td>
+			                		<td>{{ \Carbon\Carbon::parse($Saisine->dateSaisine)->format('d/m/Y') }}</td>
 			                	</tr>
 			                	<tr>
 			                		<th>Etat</th>
@@ -1192,7 +1221,7 @@
 
 			                	</tr>
 			                	<tr>
-			                		<td>Document(s)</td>
+			                		<td>Document(s)1</td>
 			                		<td>
                                         
                                     @foreach($saisine_doc as $file)
@@ -1367,7 +1396,8 @@
 	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
 	                                <div class="form-group">
 	                                    <div class="form-line">
-	                                    	<input type="file" name="docContentieu[]" multiple="">
+	                                    	<input type="file"  class="form-control" name="docContentieu[]" multiple="">
+                                            <input type="text" class="file-name" placeholder="Nom du document" name="docContentieu_names[]">
 	                                   	</div>
 	                                </div>
 	                                <span class="invalid-feedback"></span>
@@ -1473,7 +1503,7 @@
                                     <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-width="100" aria-valuenow="0"></div>
                                 </div>
                             	<a href="#" class="btn btn-default pull-left btn-lg previous  waves-effect" > <i class="fa fa-chevron-left"></i> Précédent</a>
-                                <a href="#" class="btn btn-success pull-right btn-lg send" id="sendDecision" class="waves-effect">Finaliser</a>
+                                <a href="#" class="btn btn-success pull-right btn-lg send" id="sendDecision" class="waves-effect" style="display:none">Finaliser</a>
 			                    <a href="#" class="btn btn-default pull-right btn-lg send" id="sendDecisionSave" class="waves-effect" style="margin-right: 10px">Enregister</a>
 			                </div>
 

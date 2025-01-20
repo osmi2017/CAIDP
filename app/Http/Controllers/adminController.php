@@ -397,6 +397,9 @@ class adminController extends Controller
             'saisine_id' => 'required'
         ]);
         
+       // Get all uploaded files
+        $allDocumentNames = $request->input('docContentieu_names');
+        //dd(count($allDocumentNames) );
         if($validator->fails()){
             return $validator->errors()->all();
         }
@@ -416,7 +419,7 @@ class adminController extends Controller
             $lastContentieu = $this->lastContentieu();
             $contentieu_id = $request->contentieu_id ? $request->contentieu_id : $lastContentieu->id;
             $allContentieuxSaisine = $this->allContentieuxSaisine($request->saisine_id);
-            $this->saveDocContentieu($_FILES, $contentieu_id);
+            $this->saveDocContentieu($_FILES, $contentieu_id,$allDocumentNames );
             $data['error'] = false;
             $data['message'] = "L'argument en réplique a été ajouté avec succès";
             
@@ -585,7 +588,7 @@ class adminController extends Controller
         }
     }
 
-    public function saveDocContentieu($donnees, $contentieu_id, $path="docContentieu/"){
+    public function saveDocContentieu($donnees, $contentieu_id,$allDocumentNames , $path="docContentieu/"){
 
         $path = public_path()."/".$path;
         $nbre = 0;
@@ -597,6 +600,9 @@ class adminController extends Controller
             }
 
             $name = explode(".", $donnees['docContentieu']['name'][$i])[0];
+            if(count($allDocumentNames)>=1){
+                $name = $allDocumentNames[0];
+            }
             $ext  = explode(".", $donnees['docContentieu']['name'][$i])[1];
             $nom = Str::Slug($name);
             $nom = $nom."_".date("ymdis").".".$ext;

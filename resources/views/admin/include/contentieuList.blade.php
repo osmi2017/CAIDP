@@ -73,19 +73,15 @@
 		@if($Saisine && $Saisine->contentieu)
 		@foreach($Saisine->contentieu as $value)
 		<tr>
-			<td class="td_dateContentieux">{{ $value->dateContentieux }}</td>
+			<td class="td_dateContentieux">{{ $value->dateContentieux  }}</td>
       <td class="td_actionContentieu">{{ $value->actionContentieu }}</td>
 			<td class="td_argument">
 				{!! $value->argument !!}
 				@if($value->doccontentieu)
 						<ul class="iframeData">
 					@foreach($value->doccontentieu as $val)
-						<li>
-							<a href="#" title="Zoomer" class="ZoomerIframe"><i class="fa fa-search-plus" ></i>Zoomer</a>
-							<br>
-							<iframe src="{{ asset("/docContentieu/".$val->document) }}" width="200"></iframe> <br>
-							<span class="renameFile" data-type="contentieu" contenteditable="" id="{{ $val->id }}" data-default="Nommer le fichier" data-change="{{ $val->nomFichier ? 1 : 0 }}">{{ $val->nomFichier ? $val->nomFichier : "Renommer le fichier ici" }}</span>
-						</li>	
+         
+          <a href="{{ asset('/docContentieu/' .$val->document) }}" class="fichier" target="_blank">{{$val->document}}</a><br>
 					@endforeach
 						</ul>
 				@endif

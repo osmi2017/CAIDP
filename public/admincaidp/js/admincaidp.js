@@ -368,6 +368,7 @@ $(document).ready(function(){
 			// var d = f.find("input, select, textarea, radio, checkbox").serialize();
 			var d = new FormData(f[0]);
 			crf();
+			showSpinner();
 			$.ajax({
 				url: '../../enregistrer-requerant',
 				type: 'POST',
@@ -375,6 +376,7 @@ $(document).ready(function(){
 				processData: false,
 				contentType: false,
 				success: function (data) {
+					hideSpinner();
 					ableBtn(f);
 					if(typeof data =='string'){
 						var m = JSON.parse(data);
@@ -404,11 +406,13 @@ $(document).ready(function(){
 	function sendOrganisme(f){
 		var d = new FormData(f[0]);
 		crf();
+		showSpinner();
 		$.ajax({
 	        url: '../organisme-save',
 	        type: 'POST',
 	        data: d,
 	        success: function (data) {
+				hideSpinner();
 	        	$(document).find('div.has-error').removeClass('has-error');
 	            if(typeof data =='string'){
 					var m = JSON.parse(data);
@@ -443,11 +447,13 @@ $(document).ready(function(){
 		}
 		//alert(f[0])
 		crf();
+		showSpinner();
 		$.ajax({
 	        url: '../enregistrer-demande',
 	        type: 'POST',
 	        data: d,
 	        success: function (data) {
+				hideSpinner();
 	        	$(document).find('div.has-error').removeClass('has-error');
 	            if(typeof data =='string'){
 					var m = JSON.parse(data);
@@ -476,11 +482,13 @@ $(document).ready(function(){
 		var d = new FormData(f[0]);
 		d.append('resume', CKEDITOR.instances['resume'].getData());
 		crf();
+		showSpinner();
 		$.ajax({
 	        url: 'saveSaisine',
 	        type: 'POST',
 	        data: d,
 	        success: function (data) {
+				hideSpinner();
 	        	$(document).find('div.has-error').removeClass('has-error');
 	            if(typeof data =='string'){
 					var m = JSON.parse(data);
@@ -508,11 +516,13 @@ $(document).ready(function(){
 		var d = new FormData(f[0]);
 		d.append('suite', CKEDITOR.instances['suite'].getData());
 		crf();
+		showSpinner();
 		$.ajax({
 	        url: 'saveFacilitation',
 	        type: 'POST',
 	        data: d,
 	        success: function (data) {
+				hideSpinner();
 	        	$(document).find('div.has-error').removeClass('has-error');
 	            if(typeof data =='string'){
 					var m = JSON.parse(data);
@@ -563,11 +573,13 @@ $(document).ready(function(){
 		var d = new FormData(f[0]);
 		d.append('argument', CKEDITOR.instances['argument'].getData());
 		crf();
+		showSpinner();
 		$.ajax({
 	        url: 'saveContentieu',
 	        type: 'POST',
 	        data: d,
 	        success: function (data) {
+				hideSpinner();
 	        	$(document).find('div.has-error').removeClass('has-error');
 	            if(typeof data =='string'){
 					var m = JSON.parse(data);
@@ -615,11 +627,13 @@ $(document).ready(function(){
 		d.append('decision', CKEDITOR.instances['decision'].getData());
 		d.append('saved', save);
 		crf();
+		showSpinner();
 		$.ajax({
 	        url: 'saveDecision',
 	        type: 'POST',
 	        data: d,
 	        success: function (data) {
+				hideSpinner();
 	        	$(document).find('div.has-error').removeClass('has-error');
 	            if(typeof data =='string'){
 					var m = JSON.parse(data);
@@ -868,9 +882,12 @@ $(document).on("click", ".editContentieu", function(){
 		parent = $(this).parent().parent(),
 		Bigparent = $(this).parent().parent().parent().parent().parent().parent();
 		// dd(Bigparent);
+		//alert("ici")
 		var dateFacilitation = parent.find('td.td_dateContentieux').text();
 		Bigparent.find("#dateContentieux").val(dateFacilitation);
-
+		
+		var fichier= parent.find('a').attr('href');
+        //alert(fichier)
 		var actionFacilitation = parent.find('td.td_actionContentieu').text();
 		
 		Bigparent.find("#actionContentieu").val(actionFacilitation);
@@ -1105,7 +1122,9 @@ $("input[name=type_id]").change(function(){
 		$("#representantData").empty().html($("#representantName").html());
 		$("#nomPrenomBox").empty();
 		$("#titreBox").attr("required", "required");
-		$("#qualite").val("3");
+		
+		$("#nameBox").removeClass("hide");
+		$("#qualite").val("");
 		$("#qualite").removeAttr("required");
 		// ==================== mandantBox ==========
 		// $("#mandantBox").addClass('hide');
@@ -1246,4 +1265,20 @@ $('.remove-file1').on('click', function() {
 		});
 	}
 });
+
+function showSpinner() {
+    // Create or show the spinner element
+    if (!$("#spinner").length) {
+        $("body").append('<div id="spinner" class="spinner-overlay"><div class="spinner"></div></div>');
+    }
+    $("#spinner").fadeIn();
+}
+
+function hideSpinner() {
+    // Hide and remove the spinner
+    $("#spinner").fadeOut(function () {
+        $(this).remove();
+    });
+}
+
 });

@@ -66,7 +66,7 @@
         <div class="card">
             <div class="header">
                 <h2>
-                    SAISINES
+                    SAISINES1
                 </h2>
             </div>
             <div class="body">
@@ -93,6 +93,7 @@
                             <td><a href="{{ route('admin.newSaisine', $value->id_saisine) }}">{{ $value->motif }}</a></td>
                             <td><a href="{{ route('admin.newSaisine', $value->id_saisine) }}">{{ $value->saisineDate }}</a></td>
                             <td>  <a href="{{ route('admin.newSaisine', $value->id_saisine) }}">{{ $Globals->State($value->etat_saisine, $adminController->checkFacilitation($value->id_saisine),  $adminController->checkContentieu($value->id_saisine)) }}</a></td>
+                           
                         </tr>
                         @endforeach
                     </tbody>

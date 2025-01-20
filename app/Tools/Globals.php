@@ -127,6 +127,9 @@ class Globals
             }else{
                 echo "<label class='label label-warning'>En cours</label>";
             }
+        }
+        elseif($etat==2){
+            echo "<label class='label label-success New'>Clôturable</label>";
         }else{
             echo "<label class='label label-info'>Clôturé</label>";
         }
@@ -140,6 +143,8 @@ class Globals
             }else{
                 echo "<label class='label label-warning'>En cours</label>";
             }
+        }elseif($etat==2){
+            echo "<label class='label label-success New'>Clôturable</label>";
         }else{
             echo "<label class='label label-info'>Clôturé</label>";
         }
