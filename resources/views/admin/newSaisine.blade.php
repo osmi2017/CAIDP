@@ -145,7 +145,7 @@
 
 		<form id="messageForm">
                     <input id="user_id"/>
-                    <input id="contentieu_id"/>
+                    <input id="contentieu_id1"/>
                     <input id="caidp_id" value="1"/>
                     <label for ="reponse">Tapez le message ici:</label>
                     <textarea class="form-control" id="reponse" rows="3"></textarea><br>
@@ -1350,6 +1350,7 @@
 	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
 	                                <div class="form-group">
 	                                    <div class="form-line">
+                                        <input type="text" name="contentieu_id" id="contentieu_id" class="form-control " required="">
 	                                    	<input type="text" name="dateContentieux" id="dateContentieux" class="form-control date" required="">
 	                                   	</div>
 	                                </div>
@@ -1394,6 +1395,7 @@
 	                                <label for="suite">Pièces jointes </label>
 	                            </div>
 	                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                                    <div class="file-container1" id="contentieux_doc"></div>
 	                                <div class="form-group">
 	                                    <div class="form-line">
 	                                    	<input type="file"  class="form-control" name="docContentieu[]" multiple="">

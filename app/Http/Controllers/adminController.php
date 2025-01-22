@@ -775,7 +775,21 @@ class adminController extends Controller
     $filename = $request->input('filename');
     $filePath = 'admincaidp/demandes/' . $filename;
     $filePath1 ='admincaidp/doc_saisines/' . $filename;
-
+    //dd($request);
+    if($request->input('type')=='contentieu'){
+        $filename = $request->input('docName');
+        $filePath2 = 'docContentieu/' . $filename;
+        if (Storage::disk('public')->exists($filePath2)) {
+            //dd("ici");
+            Storage::disk('public')->delete($filePath2);
+            Doccontentieu::where('document', $filename)->delete();
+            // Return a JSON response for success
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Document supprimé avec succès'
+            ]);
+        }
+    }
     // Check if the file exists in the public disk
     if (Storage::disk('public')->exists($filePath)) {
         // Delete the file

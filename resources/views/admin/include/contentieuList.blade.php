@@ -60,48 +60,48 @@
 }
 </style>  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
-
-<table class="table table-striped contentieuTable">
-	<thead>
-		<th>Date</th>
-		<th>Action</th>
+<table class="table table-striped contentieuTable display">
+    <thead>
+        <tr>
+            <th style="display:none">contentieu_id</th>
+            <th>Date</th>
+            <th>Action</th>
             <th>Contenu</th>
-		<th></th>
-	</thead>
-	<tbody>
-		
-		@if($Saisine && $Saisine->contentieu)
-		@foreach($Saisine->contentieu as $value)
-		<tr>
-			<td class="td_dateContentieux">{{ $value->dateContentieux  }}</td>
-      <td class="td_actionContentieu">{{ $value->actionContentieu }}</td>
-			<td class="td_argument">
-				{!! $value->argument !!}
-				@if($value->doccontentieu)
-						<ul class="iframeData">
-					@foreach($value->doccontentieu as $val)
-         
-          <a href="{{ asset('/docContentieu/' .$val->document) }}" class="fichier" target="_blank">{{$val->document}}</a><br>
-					@endforeach
-						</ul>
-				@endif
-			</td>
-			<th> 
-            <a href="#" class="editContentieu" id="{{ $value->id }}"> <i class="fa fa-edit"></i></a>
-            <a href="#" class="supContentieu" id="{{ $value->id }}"> <i class="fa fa-trash text-danger"></i></a> 
-			@if($messages)
-			<a href="#" class="msgContentieu" id="{{ $value->id }}" data-toggle="modal" data-target="#exampleModal" onclick="openModal1({{ $value }},{{ $messages }},{{ auth()->id() }})" style="display: none;"> <i class="fa fa-envelope text-success"></i></a> 
-            @endif
-		</th>
-		
-		</tr>
-		
-		@endforeach
-		@endif
-	</tbody>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if($Saisine && $Saisine->contentieu)
+        @foreach($Saisine->contentieu as $value)
+        <tr>
+            <td class="td_idContentieux" style="display:none">{{ $value->id }}</td>
+            <td class="td_dateContentieux">{{ $value->dateContentieux }}</td>
+            <td class="td_actionContentieu">{{ $value->actionContentieu }}</td>
+            <td class="td_argument">
+                {!! $value->argument !!}
+                @if($value->doccontentieu)
+                    <ul class="iframeData">
+                    @foreach($value->doccontentieu as $val)
+                        <a href="{{ asset('/docContentieu/' .$val->document) }}" class="fichier" target="_blank">{{$val->document}}</a><br>
+                    @endforeach
+                    </ul>
+                @endif
+            </td>
+            <th> 
+                <a href="#" class="editContentieu" id="{{ $value->id }}"> <i class="fa fa-edit"></i></a>
+                <a href="#" class="supContentieu" id="{{ $value->id }}"> <i class="fa fa-trash text-danger"></i></a> 
+                @if($messages)
+                <a href="#" class="msgContentieu" id="{{ $value->id }}" data-toggle="modal" data-target="#exampleModal" onclick="openModal1({{ $value }},{{ $messages }},{{ auth()->id() }})" style="display: none;"> <i class="fa fa-envelope text-success"></i></a> 
+                @endif
+            </th>
+        </tr>
+        @endforeach
+        @endif
+    </tbody>
 </table>
 <div  class="text-center addArgumentBtn {{ !$Saisine ? "hide" : "" }} "><a class="btn btn-info btn-lg" href="#" title="Ajouter un argumenten réplique"><i class="material-icons">note_add</i> Ajouter une action</a></div>
 <script>
+  
   function openModal1(contentieu, messages, id) {
   var txt = '';
   for (let i = 0; i < messages.length; i++) {

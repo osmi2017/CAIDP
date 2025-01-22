@@ -580,7 +580,7 @@ $(document).ready(function(){
 	        data: d,
 	        success: function (data) {
 				hideSpinner();
-	        	$(document).find('div.has-error').removeClass('has-error');
+				 	$(document).find('div.has-error').removeClass('has-error');
 	            if(typeof data =='string'){
 					var m = JSON.parse(data);
 					if(m.error==true){
@@ -879,19 +879,37 @@ $(document).on("click", ".editFacilitation", function(){
 $(document).on("click", ".editContentieu", function(){
 	
 	var id = $(this).attr('id'),
-		parent = $(this).parent().parent(),
-		Bigparent = $(this).parent().parent().parent().parent().parent().parent();
-		// dd(Bigparent);
-		//alert("ici")
-		var dateFacilitation = parent.find('td.td_dateContentieux').text();
-		Bigparent.find("#dateContentieux").val(dateFacilitation);
-		
-		var fichier= parent.find('a').attr('href');
-        //alert(fichier)
-		var actionFacilitation = parent.find('td.td_actionContentieu').text();
-		
-		Bigparent.find("#actionContentieu").val(actionFacilitation);
+    parent = $(this).closest('tr'), // Adjust selector for a more specific parent
+    Bigparent = $(this).closest('.big-parent-class'); // Use a class or ID to identify the "big parent"
 
+	var dateFacilitation = parent.find('td.td_dateContentieux').text();
+	$("#dateContentieux").val(dateFacilitation);
+
+	var idContentieux= parent.find('td.td_idContentieux').text();
+	
+	$("#contentieu_id").val(idContentieux);
+
+	// Loop through each <a> inside the parent and process them
+	parent.find('a').each(function () {
+    var fichier = $(this).attr('href');
+
+    if (fichier && fichier !== '#') {
+        var fichier_name = fichier.replace("http://localhost:8000/docContentieu/", "");
+
+        // Create a new file group for each <a> tag
+        const newFileGroup = `
+            <div class="file-group1" id="contentieu_group">
+                <input type="text" class="" name="docContentieu_names1[]" placeholder="Nom du document" value="` + fichier_name + `" readonly>
+                <button type="button" class="remove-file2 btn-danger">Supprimer</button>
+            </div>
+        `;
+        $("#contentieux_doc").append(newFileGroup);
+    }
+});
+	var actionFacilitation = parent.find('td.td_actionContentieu').text();
+	   
+		$("#actionContentieu").val(actionFacilitation);
+        
 		var suite = parent.find('td.td_argument p').text();
 		
 		var editor = CKEDITOR.instances.argument;
@@ -1265,6 +1283,43 @@ $('.remove-file1').on('click', function() {
 		});
 	}
 });
+
+$(document).on("click", ".remove-file2", function () {
+	
+	var parentDiv = $(this).closest(".file-group1");
+	var docName = parentDiv.find("input[name='docContentieu_names1[]']").val();
+	
+	if (confirm('Êtes vous sûre de vouloir supprimer ce document?')) {
+		crf();
+		$.ajax({
+			url: 'documents/delete/', // Adjust the URL as needed
+			type: 'POST',
+			data: {
+				docName: docName,
+				type:"contentieu",
+			},
+			success: function(response) {
+				console.log(response.status);
+				
+				if (response.status === 'success') {
+					console.log(parentDiv )
+                    alert(response.message);
+					
+					parentDiv.fadeOut(300, function() {
+						parentDiv.remove();
+					});
+                } else {
+                    alert(response.message);
+                }
+            },
+			error: function(xhr) {
+				console.log(xhr.responseText)
+				alert('Error deleting file: ' + xhr.responseText);
+			}
+		});
+	}
+});
+
 
 function showSpinner() {
     // Create or show the spinner element
